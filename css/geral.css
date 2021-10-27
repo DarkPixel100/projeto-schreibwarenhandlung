@@ -1,0 +1,21 @@
+* {
+  --primaria: #f4f4f4;
+  --secundaria: #41A24D;
+  --terciaria: #00420c;
+  --extra: #C21C22;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: var(--primaria);
+}
+
+.btn-padrao {
+  background-color: var(--secundaria);
+  color: var(--primaria);
+  font-weight: bold;
+}
