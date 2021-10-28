@@ -14,17 +14,7 @@ form {
   justify-content: space-between;
 }
 
-input#username, input#senha {
-  border: solid black 1px;
-  width: min-content;
-}
-
 a {
-  color: var(--extra);
-  width: fit-content;
-}
-
-a:hover {
   color: var(--extra);
 }
 

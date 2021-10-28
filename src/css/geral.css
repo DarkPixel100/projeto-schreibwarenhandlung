@@ -8,12 +8,8 @@ body {
   background-color: var(--primaria);
 }
 
-.btn-padrao {
+.button, button, input[type='button'], input[type='reset'], input[type='submit'] {
   background-color: var(--secundaria);
+  border: var(--secundaria);
   color: var(--primaria);
-  font-weight: bold;
-}
-
-a {
-  cursor: pointer;
 }
