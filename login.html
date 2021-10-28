@@ -8,25 +8,35 @@
   <title>Seleção de Função</title>
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/geral.css">
-  <link rel="stylesheet" href="../css/individual/index.css">
+  <link rel="stylesheet" href="../css/individual/login.css">
 </head>
 
 <body>
+  <div id="logout">
+    <p>
+      Nome do usuário: Márcio Torres
+    </p>
+    <a href=".\index.php">
+      <p>
+        Sair do sistema
+      </p>
+    </a>
+  </div>
+
   <div class="container">
     <h3>Sistema de Administração de Planos de Trabalho Docente</h3>
     <form method="get" action="">
-      <label for="username">Nome de Usuário:</label>
-      <input type="text" class="form-control" name="username" id="username" aria-describedby="username" placeholder="">
-      <label for="senha">Senha:</label>
-      <input type="password" class="form-control" name="senha" id="senha" aria-describedby="username" placeholder="">
-      <input type="submit" value="Entrar" name="entrar" class="btn btn-padrao">
+      <label for="funcao">Escolha a função que irá desempenhar no sistema:</label>
+      <select name="funcao_escolhida" id="funcao" class="form-control">
+        <option value="Professor">Professor</option>
+        <option value="Coordenação de Curso">Coordenação de Curso</option>
+      </select>
+      <input type="submit" value="Avançar" name="avancar" class="btn btn-padrao">
     </form>
-    <a href="./esqueci_minha_senha.php"><p>Esqueceu o seu usuário ou senha?</p></a>
   </div>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js "></script>
   <script src=".\js\personalizado.js"></script>
-  <script>document.getElementById("senha").submit;</script>
 </body>
 
 </html>
