@@ -1,8 +1,8 @@
-@import url('../geral.css');
-
+@import url('../variaveis.css');
 .container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
@@ -21,6 +21,15 @@ input#username, input#senha {
 
 a {
   color: var(--extra);
+  width: fit-content;
+}
+
+a:hover {
+  color: var(--extra);
+}
+
+p {
+  margin: 0;
 }
 
 @media (min-width: 1100px) {
