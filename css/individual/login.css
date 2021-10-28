@@ -1,4 +1,4 @@
-@import url('../geral.css');
+@import url('../variaveis.css');
 #logout {
   background-color: var(--extra);
   padding: 1vh 2vw 1vh 2vw;
