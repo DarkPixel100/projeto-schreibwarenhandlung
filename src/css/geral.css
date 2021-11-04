@@ -1,7 +1,4 @@
 @import url('../variaveis.css');
-* {
-  margin-bottom: 0.5em;
-}
 
 html, body {
   height: 100%;
@@ -56,6 +53,10 @@ label {
 /* h1, h2, h3, h4, h5, h6, p, td, th {
   color: black;
 } */
+
+#header {
+  font-weight: bold;
+}
 
 p {
   text-align: justify;
