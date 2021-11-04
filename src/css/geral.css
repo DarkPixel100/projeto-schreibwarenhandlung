@@ -1,101 +1,119 @@
 @import url('../variaveis.css');
-html, body {
-  height: 100%;
-  width: 100%;
+html,
+body {
+    height: 100%;
+    width: 100%;
 }
 
 body {
-  background-color: var(--primaria);
-  display: flex;
-  justify-content: center;
+    background-color: var(--primaria);
+    display: flex;
+    justify-content: center;
+    background-image: url("../img/ifrs-alt-green.png");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25%;
+    position: relative;
+    height: 50%;
 }
 
 body * {
-  animation: fade ease 1s 1 forwards;
+    animation: fade ease 1s 1 forwards;
 }
 
 #logout {
-  background-color: var(--terciaria);
-  padding: 1vh 2vw 1vh 2vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
+    background-color: var(--terciaria);
+    padding: 1vh 2vw 1vh 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 #logout * {
-  margin-bottom: 0.1rem;
-  color: var(--primaria);
-  font-weight: bold;
-  text-align: center;
+    margin-bottom: 0.1rem;
+    color: var(--primaria);
+    font-weight: bold;
+    text-align: center;
 }
 
 #logo {
-  height: 3.6rem;
+    height: 3.6rem;
 }
 
 #user {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #wrapper {
-  position: absolute;
-  top: 8vh;
-  background-color: var(--primaria);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 85%;
+    position: absolute;
+    top: 8vh;
+    background-color: var(--primaria);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 85%;
 }
 
 .title {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 form {
-  margin: 0;
+    margin: 0;
 }
 
-.button, button, input[type='button'], input[type='reset'], input[type='submit'] {
-  background-color: var(--secundaria);
-  border: var(--secundaria);
-  color: var(--primaria);
+.button,
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+    background-color: var(--secundaria);
+    border: var(--secundaria);
+    color: var(--primaria);
 }
 
-.button:hover, button:hover, input[type='button']:hover, input[type='reset']:hover, input[type='submit']:hover {
-  background-color: var(--terciaria);
+.button:hover,
+button:hover,
+input[type='button']:hover,
+input[type='reset']:hover,
+input[type='submit']:hover {
+    background-color: var(--terciaria);
 }
 
-input[type='text']:focus, input[type='password']:focus {
-  border-color: var(--secundaria);
+input[type='text']:focus,
+input[type='password']:focus {
+    border-color: var(--secundaria);
 }
 
 label {
-  user-select: none;
+    user-select: none;
 }
+
 
 /* h1, h2, h3, h4, h5, h6, p, td, th {
   color: black;
 } */
 
 p {
-  text-align: justify;
+    text-align: justify;
 }
 
 a * {
-  text-align: center;
+    text-align: center;
 }
 
 @keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
