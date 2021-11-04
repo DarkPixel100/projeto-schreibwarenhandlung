@@ -21,12 +21,16 @@
 
 <body>
   <div class="container">
-    <h3>Sistema de Administração de Planos de Trabalho Docente</h3>
+    <h3 id="header">Sistema de Administração de Planos de Trabalho Docente</h3>
     <form method="get" action="">
-      <label for="username">Nome de Usuário:</label>
-      <input type="text" class="form-control" name="username" id="username" aria-describedby="username" placeholder="">
-      <label for="senha">Senha:</label>
-      <input type="password" class="form-control" name="senha" id="senha" aria-describedby="senha" placeholder="">
+      <label>
+        <i class="fa fa-user" aria-hidden="true"></i>
+        <input type="text" class="form-control" name="username" id="username" aria-describedby="username" placeholder="Nome de Usuário">
+      </label>
+      <label>
+        <i class="fa fa-lock" aria-hidden="true"></i>
+        <input type="password" class="form-control" name="senha" id="senha" aria-describedby="senha" placeholder="Senha">
+      </label>
       <input type="submit" value="Entrar" name="entrar" class="btn btn-padrao">
     </form>
     <a href="./esqueci_minha_senha.php">
