@@ -1,13 +1,17 @@
 @import url('../variaveis.css');
-
 html, body {
   height: 100%;
   width: 100%;
-  animation: fade ease 1s 1 forwards;
 }
 
 body {
   background-color: var(--primaria);
+  display: flex;
+  justify-content: center;
+}
+
+body * {
+  animation: fade ease 1s 1 forwards;
 }
 
 #logout {
@@ -28,8 +32,33 @@ body {
   text-align: center;
 }
 
-.container {
-  top: 6vh;
+#logo {
+  height: 3.6rem;
+}
+
+#user {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#wrapper {
+  position: absolute;
+  top: 8vh;
+  background-color: var(--primaria);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 85%;
+}
+
+.title {
+  font-weight: bold;
+}
+
+form {
+  margin: 0;
 }
 
 .button, button, input[type='button'], input[type='reset'], input[type='submit'] {
@@ -54,12 +83,12 @@ label {
   color: black;
 } */
 
-#header {
-  font-weight: bold;
-}
-
 p {
   text-align: justify;
+}
+
+a * {
+  text-align: center;
 }
 
 @keyframes fade {
