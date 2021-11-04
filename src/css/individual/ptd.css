@@ -1,11 +1,6 @@
-* {
-  color: black;
-  margin-bottom: 0.5em;
-}
-
+@import url('../variaveis.css');
 .container h2, h3, th {
   text-align: center;
-  margin-bottom: 0.5em;
 }
 
 h3, .ptd {
@@ -16,17 +11,10 @@ p {
   font-size: 120%;
 }
 
-#logout {
-  background-color: var(--extra);
-  padding: 1vh 2vw 1vh 2vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 100%;
+form {
+  margin: 0;
 }
 
-#logout * {
-  margin-bottom: 0.1rem;
-  color: var(--primaria);
-  font-weight: bold;
+form>input {
+  margin-top: 1.5rem;
 }

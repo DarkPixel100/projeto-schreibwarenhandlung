@@ -1,18 +1,4 @@
 @import url('../variaveis.css');
-#logout {
-  background-color: var(--extra);
-  padding: 1vh 2vw 1vh 2vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#logout * {
-  margin-bottom: 0.1rem;
-  color: var(--primaria);
-  font-weight: bold;
-}
-
 .container {
   display: flex;
   flex-direction: column;
