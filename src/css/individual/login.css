@@ -1,9 +1,15 @@
 @import url('../variaveis.css');
-.container {
+body {
+  background-color: var(--secundaria);
+}
+
+#wrapper {
   display: flex;
   flex-direction: column;
-  text-align: center;
   align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1rem;
 }
 
 h6 {
