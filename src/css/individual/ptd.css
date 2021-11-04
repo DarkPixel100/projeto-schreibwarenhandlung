@@ -1,18 +1,21 @@
 @import url('../variaveis.css');
-.container * {
-  text-align: center;
-}
-
 .ptd {
   font-weight: bold;
 }
 
 p {
   font-size: 120%;
+  text-align: justify;
 }
 
-form {
-  margin: 0;
+#buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+th, td {
+  text-align: center;
 }
 
 form>input {
