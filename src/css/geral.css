@@ -14,7 +14,7 @@ body {
 }
 
 #logout {
-  background-color: var(--extra);
+  background-color: var(--terciaria);
   padding: 1vh 2vw 1vh 2vw;
   display: flex;
   justify-content: space-between;
@@ -49,9 +49,13 @@ input[type='text']:focus, input[type='password']:focus {
   border-color: var(--secundaria);
 }
 
-h1, h2, h3, h4, h5, h6, p, td, th {
-  color: black;
+label {
+  user-select: none;
 }
+
+/* h1, h2, h3, h4, h5, h6, p, td, th {
+  color: black;
+} */
 
 p {
   text-align: justify;
