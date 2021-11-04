@@ -1,4 +1,9 @@
 @import url('../variaveis.css');
+* {
+  color: black;
+  margin-bottom: 0.5em;
+}
+
 html, body {
   height: 100%;
   width: 100%;
@@ -8,8 +13,35 @@ body {
   background-color: var(--primaria);
 }
 
+#logout {
+  background-color: var(--extra);
+  padding: 1vh 2vw 1vh 2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 1s;
+}
+
+#logout * {
+  margin-bottom: 0.1rem;
+  color: var(--primaria);
+  font-weight: bold;
+}
+
 .button, button, input[type='button'], input[type='reset'], input[type='submit'] {
   background-color: var(--secundaria);
   border: var(--secundaria);
   color: var(--primaria);
+}
+
+.button:hover, button:hover, input[type='button']:hover, input[type='reset']:hover, input[type='submit']:hover {
+  background-color: var(--terciaria);
+}
+
+input[type='text']:focus, input[type='password']:focus {
+  border-color: var(--secundaria);
+}
+
+p {
+  text-align: justify;
 }
