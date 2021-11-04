@@ -1,9 +1,9 @@
 @import url('../variaveis.css');
-.container h2, h3, th {
+.container * {
   text-align: center;
 }
 
-h3, .ptd {
+.ptd {
   font-weight: bold;
 }
 
