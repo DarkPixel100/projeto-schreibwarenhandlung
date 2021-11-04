@@ -1,12 +1,12 @@
 @import url('../variaveis.css');
 * {
-  color: black;
   margin-bottom: 0.5em;
 }
 
 html, body {
   height: 100%;
   width: 100%;
+  animation: fade ease 1s 1 forwards;
 }
 
 body {
@@ -19,13 +19,20 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: 1s;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 #logout * {
   margin-bottom: 0.1rem;
   color: var(--primaria);
   font-weight: bold;
+  text-align: center;
+}
+
+.container {
+  top: 6vh;
 }
 
 .button, button, input[type='button'], input[type='reset'], input[type='submit'] {
@@ -42,6 +49,19 @@ input[type='text']:focus, input[type='password']:focus {
   border-color: var(--secundaria);
 }
 
+h1, h2, h3, h4, h5, h6, p, td, th {
+  color: black;
+}
+
 p {
   text-align: justify;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
