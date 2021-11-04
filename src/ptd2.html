@@ -22,18 +22,32 @@
 
 <body>
   <div id="logout">
-    <p> <i class="fa fa-user" aria-hidden="true"></i>
+    <img src="./img/ifrs-white.png" alt="Logo branca do IFRS" id="logo">
+    <p id="user">
+      <i class="fa fa-user" aria-hidden="true"></i>
       Nome do usuário: Márcio Torres
     </p>
-    <a href="index.html">Sair do Sistema</a>
+    <a href=".\index.php" id="leave">
+      <p>
+        Sair do sistema
+      </p>
+    </a>
   </div>
-  <div class="container">
-    <h3 id="header">Sistema de Administração de Planos de Trabalho Docente</h3>
+  <div id="wrapper">
+    <h3 class="title">Sistema de Administração de Planos de Trabalho Docente</h3>
     <h2>Página Inicial</h2>
     <h4>Coordenador de Curso: Franciane de Lima Coimbra</h4>
-    <input type="submit" name="botao_editar_perfil" value="Alterar Coordenador de Curso">
-    <input type="submit" name="botao_editar_perfil" value="Alterar Senha">
-    <h4 class="ptd">Onde está o PTD?</h4>
+    <div id="buttons">
+      <form method="get" action="">
+        <input type="hidden" name="id" value="13">
+        <input type="submit" name="botao_editar_perfil" value="Alterar Coordenador de Curso">
+      </form>
+      <form method="get" action="">
+        <input type="hidden" name="id" value="13">
+        <input type="submit" name="botao_editar_perfil" value="Alterar Senha">
+      </form>
+    </div>
+    <h4 class="title">Onde está o PTD?</h4>
     <p>
       Na tabela abaixo, o botão "Editar PTD" indica que o professor pode editar o seu PTD e encontra-se na
       coluna "Professor" até que o PTD seja submetido ao coordenador. Uma vez submetido o PTD ao coordenador, o botão
