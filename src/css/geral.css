@@ -9,13 +9,6 @@ body {
     background-color: var(--primaria);
     display: flex;
     justify-content: center;
-    background-image: url("../img/ifrs-alt-green.png");
-    background-color: #cccccc;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 25%;
-    position: relative;
-    height: 50%;
 }
 
 body * {
