@@ -1,0 +1,13 @@
+form * {
+  font-size: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+td * {
+  margin: 0;
+}

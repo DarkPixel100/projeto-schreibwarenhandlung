@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edita PTD</title>
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <!-- Font Awesome 5 -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+    integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <!-- Milligram CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+  <!-- Código Próprio -->
+  <link rel="stylesheet" type="text/css" href="./css/geral.css">
+  <link rel="stylesheet" type="text/css" href="./css/individual/edita_ptd.css">
+</head>
+
+<body>
+  <div id="logout">
+    <img src="./img/Logotipo_IF-white.svg" alt="Logo branca do IFRS" id="logo">
+    <p id="user">
+      <i class="fa fa-user" aria-hidden="true"></i>
+      Nome do usuário: Márcio Torres
+    </p>
+    <p id="perfil">
+      <i class="fas fa-pencil-alt"></i>
+      Perfil de usuário: Professor
+    </p>
+    <a href=".\index.php" id="leave">
+      <i class="fa fa-sign-out-alt" aria-hidden="true"></i>
+      <p>
+        Sair do sistema
+      </p>
+    </a>
+  </div>
+  <div id="wrapper">
+    <h3 class="title">Sistema de Administração de Planos de Trabalho Docente</h3>
+    <h2>Edição do PTD pelo Professor</h2>
+    <form method="get" action="">
+      <input type="submit" value="Voltar à página inicial" name="botao">
+      <table>
+        <tr>
+          <th>Professor:</th>
+          <td>Márcio Torres</td>
+        </tr>
+        <tr>
+          <th>Período do PTD:</th>
+          <td>2021/2</td>
+        </tr>
+        <tr>
+          <th>Sala de permanência:</th>
+          <td>
+            <textarea name="sala_permanencia"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <th>Área de conhecimento:</td>
+          <td>
+            <textarea name="area_conhecimento" rows="2" cols="50"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <th>Categoria:</th>
+          <td>
+            <select name="categoria">
+              <option value="Magistério do EBTT">Magistério do EBTT</option>
+              <option value="Magistério do ES">Magistério do ES</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>Regime de trabalho:</th>
+          <td>
+            <select name="regime_trabalho">
+              <option value="20h">20h</option>
+              <option value="40h">40h</option>
+              <option value="DE">DE</option>
+              <option value="Visitante">Visitante</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <input type="hidden" name="periodo" value=2021/2><input type="hidden" name="id" value=13>
+      <input type="submit" value="Gravar dados do cabeçalho deste PTD" name="botao"></center>
+    </form>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js "></script>
+</body>
+
+</html>
