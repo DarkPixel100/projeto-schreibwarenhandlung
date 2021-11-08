@@ -3,7 +3,7 @@
   font-weight: bold;
 }
 
-p {
+#wrapper>p {
   font-size: 120%;
   text-align: justify;
 }
