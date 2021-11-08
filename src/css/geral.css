@@ -1,4 +1,4 @@
-@import url('../variaveis.css');
+@import url('./variaveis.css');
 html, body {
   height: 100%;
   width: 100%;
@@ -35,13 +35,6 @@ body {
 
 #logo {
   height: 3.6rem;
-}
-
-#user {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 #wrapper {
@@ -103,7 +96,7 @@ a * {
 
 @media only screen and (max-width: 297px) {
   #logout {
-    height: 11vh;
+    height: 11rem;
   }
 }
 
