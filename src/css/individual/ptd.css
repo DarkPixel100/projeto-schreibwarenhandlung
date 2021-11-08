@@ -3,19 +3,8 @@
   font-weight: bold;
 }
 
-#wrapper>p {
-  font-size: 120%;
-  text-align: justify;
-}
-
 #coord {
   margin: 0;
-}
-
-#buttons {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
 th, td {

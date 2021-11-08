@@ -10,10 +10,6 @@ body {
   justify-content: center;
 }
 
-#wrapper {
-  animation: fade ease 1s 1 forwards;
-}
-
 #logout {
   background-color: var(--terciaria);
   padding: 1vh 2vw 1vh 2vw;
@@ -38,6 +34,7 @@ body {
 }
 
 #wrapper {
+  animation: fade ease 1s 1 forwards;
   position: absolute;
   top: 12vh;
   background-color: var(--primaria);
@@ -47,12 +44,23 @@ body {
   max-width: 85%;
 }
 
+#wrapper>p {
+  font-size: 120%;
+  text-align: justify;
+}
+
 .title {
   font-weight: bold;
 }
 
 form {
   margin: 0;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .button, button, input[type='button'], input[type='reset'], input[type='submit'] {
@@ -65,8 +73,20 @@ form {
   background-color: var(--terciaria);
 }
 
-input[type='text']:focus, input[type='password']:focus {
+/* Cor da borda dos inputs alterada */
+
+input[type='color']:focus, input[type='date']:focus, input[type='datetime']:focus, input[type='datetime-local']:focus, input[type='email']:focus, input[type='month']:focus, input[type='number']:focus, input[type='password']:focus, input[type='search']:focus, input[type='tel']:focus, input[type='text']:focus, input[type='url']:focus, input[type='week']:focus, input:not([type]), textarea:focus, select:focus {
   border-color: var(--secundaria);
+}
+
+/* Cor da seta do select alterada */
+
+select:focus {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 8" width="30"><path fill="%2336b845" d="M0,0l6,8l6-8"/></svg>');
+}
+
+td>form>input {
+  margin-top: 1.5rem;
 }
 
 label {
