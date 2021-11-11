@@ -80,12 +80,22 @@
         <tr>
           <th>Regime de trabalho:</th>
           <td>
-            <select name="regime_trabalho">
-              <option value="20h">20h</option>
-              <option value="40h">40h</option>
-              <option value="DE">DE</option>
-              <option value="Visitante">Visitante</option>
-            </select>
+            <label class="radioLabel">
+              <input type="radio" name="regime_trabalho" value="DE" checked>
+              Dedicação Exclusiva
+            </label>
+            <label class="radioLabel">
+              <input type="radio" name="regime_trabalho" value="40h">
+              40h
+            </label>
+            <label class="radioLabel">
+              <input type="radio" name="regime_trabalho" value="20h">
+              20h
+            </label>
+            <label class="radioLabel">
+              <input type="radio" name="regime_trabalho" value="Visitante">
+              Visitante
+            </label>
           </td>
         </tr>
       </table>

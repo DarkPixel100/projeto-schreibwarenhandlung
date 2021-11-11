@@ -13,3 +13,7 @@ form {
 td * {
   margin: 0;
 }
+
+.radioLabel {
+  font-weight: normal;
+}
