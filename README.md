@@ -23,11 +23,11 @@ Você pode ter acesso total da página por [aqui](https://dbo-2021.github.io/pro
 - ptd2.html #_DONE_
 - visualiza_ptd_preenchido.html
 - visualiza_ptd.html
-- ...
+- esqueci_minha_senha.html #_OnGoing_
 
 ## Pontos interessantes de mudança e foco principais atuais -
 
-## Arthur -
+## Arthur - Melhora visual e possivel mudanca do esqueci_minha_senha.(html,css,js)
 
 ## Diego -
 
