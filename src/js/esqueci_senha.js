@@ -3,7 +3,7 @@ let formato = "senha"
 troca.addEventListener('click', () => {
     if (formato === "senha") {
         document.getElementById("title").innerHTML = "Recuperacao de Usuário"
-        document.getElementById("trocar").innerHTML = "Nao sei minha senha"
+        document.getElementById("trocar").innerHTML = "Lembrei meu Usuário"
         document.getElementById("username").placeholder = "Seu Email"
         formato = "usuario"
     } else {
