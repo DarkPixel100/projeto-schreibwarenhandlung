@@ -1,4 +1,5 @@
-@import url('../variaveis.css');
+/* Cor e imagem de fundo do body */
+
 body {
   background-color: var(--secundaria);
   background-image: url("../../img/Logotipo_IF-dark-green.svg");
@@ -7,18 +8,30 @@ body {
   background-size: 60vh;
 }
 
+/* Alinhamento central do usuário */
+
+#user {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Alinhamento dos componentes + borda e padding */
+
 #wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
   border-radius: 10px;
   padding: 1rem;
 }
 
+/* Formatação de header */
+
 h6 {
   font-weight: bold;
 }
+
+/* Tamanho e posicionamento dos itens do formulário */
 
 form {
   min-height: 20vh;
@@ -28,9 +41,13 @@ form {
   align-items: flex-start;
 }
 
+/* Botão "avançar centralizado */
+
 input[type='submit'] {
   align-self: center;
 }
+
+/* Responsividade para dispositivos móveis */
 
 @media (min-width: 1100px) {
   form {

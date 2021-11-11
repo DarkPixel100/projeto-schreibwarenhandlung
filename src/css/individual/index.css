@@ -1,4 +1,5 @@
-@import url('../variaveis.css');
+/* Cor e imagem de fundo do body */
+
 body {
   background-color: var(--secundaria);
   background-image: url("../../img/Logotipo_IF-dark-green.svg");
@@ -7,14 +8,15 @@ body {
   background-size: 60vh;
 }
 
+/* Alinhamento dos componentes + borda e padding */
+
 #wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
   border-radius: 10px;
   padding: 1rem;
 }
+
+/* Alinhamento geral */
 
 form {
   align-items: center;
@@ -26,9 +28,13 @@ label {
   align-items: center;
 }
 
+/* Formatação da fonte */
+
 input {
   font-weight: bold;
 }
+
+/* Personalização dos botões */
 
 button {
   margin: 0 0 1.5rem .5rem;
@@ -39,6 +45,8 @@ button:focus {
   border: var(--secundaria);
 }
 
+/* Cor dos links */
+
 a {
   color: var(--extra);
 }
@@ -46,6 +54,8 @@ a {
 a>p {
   color: inherit;
 }
+
+/* Margem dos ícones FontAwesome */
 
 .fa {
   margin: 0 .5rem 1.5rem 0;

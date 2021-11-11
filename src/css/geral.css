@@ -1,14 +1,22 @@
+/* Importando variáveis (cores) */
+
 @import url('./variaveis.css');
+/* Definição de tamanhos padrões para o html e body */
+
 html, body {
   height: 100%;
   width: 100%;
 }
+
+/* Cor e formatação geral do body */
 
 body {
   background-color: var(--primaria);
   display: flex;
   justify-content: center;
 }
+
+/* Formatação, cor e posicionamento da barra superior */
 
 #logout {
   background-color: var(--terciaria);
@@ -22,6 +30,8 @@ body {
   z-index: 1;
 }
 
+/* Formatação dos itens dentro da barra superior */
+
 #logout * {
   margin-bottom: 0.1rem;
   color: var(--primaria);
@@ -33,16 +43,21 @@ body {
   height: 3.6rem;
 }
 
+/* Cor, tamanho, posicionamento, organização
+e animação (fade-in) do container principal */
+
 #wrapper {
   animation: fade ease 1s 1 forwards;
   position: absolute;
-  top: 12vh;
+  top: 17vh;
   background-color: var(--primaria);
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 85%;
 }
+
+/* Formatação geral dos textos dentro do #wrapper */
 
 #wrapper>p {
   font-size: 120%;
@@ -53,15 +68,21 @@ body {
   font-weight: bold;
 }
 
+/* Margem dos forms zerada */
+
 form {
   margin: 0;
 }
+
+/* Organização interna, posicionamento e cores dos inputs */
 
 #buttons {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
+
+/* (Botões) */
 
 .button, button, input[type='button'], input[type='reset'], input[type='submit'] {
   background-color: var(--secundaria);
@@ -85,6 +106,8 @@ select:focus {
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 8" width="30"><path fill="%2336b845" d="M0,0l6,8l6-8"/></svg>');
 }
 
+/* Input dos forms centralizados nas células de tabelas */
+
 td>form>input {
   margin-top: 1.5rem;
 }
@@ -105,6 +128,8 @@ a * {
   text-align: center;
 }
 
+/* Animação de fade-in */
+
 @keyframes fade {
   0% {
     opacity: 0;
@@ -113,6 +138,8 @@ a * {
     opacity: 1;
   }
 }
+
+/* Responsividade para dispositivos móveis */
 
 @media only screen and (max-width: 297px) {
   #logout {

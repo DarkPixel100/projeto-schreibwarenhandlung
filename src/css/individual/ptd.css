@@ -1,16 +1,11 @@
-@import url('../variaveis.css');
-.ptd {
-  font-weight: bold;
-}
+/* Alinhamento do campo que mostra o coordenador */
 
 #coord {
   margin: 0;
 }
 
+/* Alinhamento de itens em tabelas */
+
 th, td {
   text-align: center;
-}
-
-td>form>input {
-  margin-top: 1.5rem;
 }
