@@ -1,0 +1,78 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alterar Senha</title>
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <!-- Font Awesome 5 -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+    integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <!-- Milligram CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+  <!-- Código Próprio -->
+  <link rel="stylesheet" type="text/css" href="./css/geral.css">
+  <!-- <link rel="stylesheet" type="text/css" href="./css/individual/alterar_senha_usuario.css"> -->
+</head>
+
+<body>
+  <!-- Barra superior -->
+  <div id="logout">
+    <img src="./img/Logotipo_IF-white.svg" alt="Logo branca do IFRS" id="logo">
+    <p id="user">
+      <i class="fa fa-user" aria-hidden="true"></i>
+      Nome do usuário: Márcio Torres
+    </p>
+    <p id="perfil">
+      <i class="fas fa-pencil-alt"></i>
+      Perfil de usuário: Professor
+    </p>
+    <a href=".\index.php" id="leave">
+      <i class="fa fa-sign-out-alt" aria-hidden="true"></i>
+      <p>
+        Sair do sistema
+      </p>
+    </a>
+  </div>
+  <!-- Conteúdo principal -->
+  <div id="wrapper">
+    <h3 class="title">Sistema de Administração de Planos de Trabalho Docente</h3>
+    <h2>Edição de dados do usuário</h2>
+
+    <p>Nome: Marcio Torres</p>
+    <p>Função: Professor</p>
+    <form method="get" action="">
+      <input type="submit" value="Voltar à página inicial" name="botao">
+      <label>
+        <p>
+          Coordenador de Curso:
+        </p>
+        <select name="id_coordenador">
+          <option value="27">Carla Godinho Duarte</option>
+          <option value="42">Delnir Monteiro de Lemos</option>
+          <option value="47">Fabiane Biedrzycka da Silva Galarz</option>
+          <option value="48">Fabiano de Andrade Ferreira</option>
+          <option value="52">Felipe Leite Silva</option>
+          <option value="53">Flávio Galdino Xavier</option>
+          <option value="6" selected>Franciane de Lima Coimbra</option>
+          <option value="55">Gérson dos Santos Nunes</option>
+          <option value="64">Jefferson Rodrigues dos Santos</option>
+          <option value="86">Murilo Vargas da Cunha</option>
+          <option value="13">Márcio Torres</option>
+          <option value="90">Paulo Valério Saraçol</option>
+          <option value="92">Rafael Betito</option>
+        </select>
+      </label>
+      <input type="hidden" name="id" value="13">
+      <input type="submit" value="Gravar alteração" name="botao">
+    </form>
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js "></script>
+<script src="./js/alterar_senha_usuario.js"></script>
+
+</html>

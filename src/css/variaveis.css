@@ -6,3 +6,7 @@
   --terciaria: #208833;
   --extra: #C21C22;
 }
+
+.warning {
+  color: var(--extra);
+}

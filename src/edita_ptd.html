@@ -70,11 +70,15 @@
         </tr>
         <tr>
           <th>Categoria:</th>
-          <td>
-            <select name="categoria">
-              <option value="Magistério do EBTT">Magistério do EBTT</option>
-              <option value="Magistério do ES">Magistério do ES</option>
-            </select>
+          <td id="categoria">
+            <label class="radioLabel">
+              <input type="radio" name="categoria" value="Magistério do EBTT" checked>
+              Magistério do EBTT
+            </label>&nbsp;
+            <label class="radioLabel">
+              <input type="radio" name="categoria" value="Magistério do ES">
+              Magistério do ES
+              </label>
           </td>
         </tr>
         <tr>
@@ -82,26 +86,34 @@
           <td>
             <label class="radioLabel">
               <input type="radio" name="regime_trabalho" value="DE" checked>
-              Dedicação Exclusiva
+              <p>
+                Dedicação Exclusiva
+              </p>
             </label>
             <label class="radioLabel">
               <input type="radio" name="regime_trabalho" value="40h">
-              40h
+              <p>
+                40h
+              </p>
             </label>
             <label class="radioLabel">
               <input type="radio" name="regime_trabalho" value="20h">
-              20h
+              <p>
+                20h
+              </p>
             </label>
             <label class="radioLabel">
               <input type="radio" name="regime_trabalho" value="Visitante">
-              Visitante
+              <p>
+                Visitante
+              </p>
             </label>
           </td>
         </tr>
       </table>
       <!-- Confirmar envio -->
       <input type="hidden" name="periodo" value=2021/2><input type="hidden" name="id" value=13>
-      <input type="submit" value="Gravar dados do cabeçalho deste PTD" name="botao"></center>
+      <input type="submit" value="Gravar dados do cabeçalho deste PTD" name="botao" id="gravarDados">
     </form>
   </div>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>

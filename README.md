@@ -6,26 +6,26 @@ Você pode ter acesso total da página por [aqui](https://dbo-2021.github.io/pro
 
 ## To do List (arquivos) - ~41% Concluído
 
-- Importar Milligram #_DONE_
-- Importar FontAwesome5 #_DONE_
-- alterar_senha_usuario.html
+- Importar Milligram **_DONE_**
+- Importar FontAwesome5 **_DONE_**
+- alterar_senha_usuario.html **_DONE_**
 - analise_de_ptds.html
 - analise_de_ptds2.html
 - edita_ptd_2_preenchido.html
 - edita_ptd_2_quase_completo.html
 - edita_ptd_2.html
-- edita_ptd.html #_DONE_
-- editar_dados_usuario.html
-- index.html #_DONE_
-- login.html #_DONE_
+- edita_ptd.html **_DONE_**
+- editar_dados_usuario.html **_DONE_**
+- index.html **_DONE_**
+- login.html **_DONE_**
 - ptd_em_analise.html
-- ptd.html #_DONE_
-- ptd2.html #_DONE_
+- ptd.html **_DONE_**
+- ptd2.html **_DONE_**
 - visualiza_ptd_preenchido.html
 - visualiza_ptd.html
-- esqueci_minha_senha.html #_OnGoing_
+- **EXTRA**-esqueci_minha_senha.html **_OnGoing_**
 
-## Pontos interessantes de mudança e foco principais atuais -
+## Pontos interessantes de mudança e focos principais atuais -
 
 ## Arthur - Melhora visual e possivel mudanca do esqueci_minha_senha.(html,css,js)
 

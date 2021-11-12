@@ -21,7 +21,6 @@ body {
 /* Alinhamento geral */
 
 form {
-    align-items: center;
     justify-content: space-between;
 }
 
@@ -29,7 +28,6 @@ label {
     display: flex;
     align-items: center;
 }
-
 
 /* Formatação da fonte */
 

@@ -4,16 +4,30 @@ form * {
   font-size: 2rem;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+table {
+  margin: 0;
 }
 
 td * {
   margin: 0;
 }
 
+#categoria * {
+  display: inline-block;
+}
+
 .radioLabel {
   font-weight: normal;
+}
+
+@media only screen and (max-width: 297px) {
+  form *{
+    font-size: inherit;
+  }
+
+  #gravarDados {
+    line-height: 2rem;
+    white-space: normal;
+    height: fit-content;
+  }
 }

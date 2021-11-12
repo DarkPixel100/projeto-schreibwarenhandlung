@@ -1,0 +1,20 @@
+p {
+  margin: 0;
+}
+
+label {
+  align-self: flex-start;
+  width: 100%;
+}
+
+input[type="password"] {
+  margin: 0;
+}
+
+.warning {
+  align-self: flex-start;
+}
+
+#tamanhoSenha, #senhaIgual {
+  opacity: 0;
+}

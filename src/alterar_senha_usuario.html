@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Seleção de Função</title>
+  <title>Alterar Senha</title>
   <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
   <!-- Font Awesome 5 -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
@@ -18,7 +15,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
   <!-- Código Próprio -->
   <link rel="stylesheet" type="text/css" href="./css/geral.css">
-  <link rel="stylesheet" type="text/css" href="./css/individual/login.css">
+  <link rel="stylesheet" type="text/css" href="./css/individual/alterar_senha_usuario.css">
 </head>
 
 <body>
@@ -28,6 +25,10 @@
     <p id="user">
       <i class="fa fa-user" aria-hidden="true"></i>
       Nome do usuário: Márcio Torres
+    </p>
+    <p id="perfil">
+      <i class="fas fa-pencil-alt"></i>
+      Perfil de usuário: Professor
     </p>
     <a href=".\index.php" id="leave">
       <i class="fa fa-sign-out-alt" aria-hidden="true"></i>
@@ -39,26 +40,34 @@
   <!-- Conteúdo principal -->
   <div id="wrapper">
     <h3 class="title">Sistema de Administração de Planos de Trabalho Docente</h3>
-    <h6>Escolha a função que irá desempenhar no sistema:</h6>
-    <!-- Escolha da função para login -->
+    <h2>Edição de dados do usuário</h2>
+
+    <p>Nome: Marcio Torres</p>
+    <p>Função: Professor</p>
     <form method="get" action="">
+      <input type="submit" value="Voltar à página inicial" name="botao">
+      <p>Alterar Senha:</p>
+      <p class="warning">
+        Procure não usar senhas já usadas em outros serviços.
+        A senha precisa ter pelo menos 8 caracteres.
+      </p>
       <label>
-        <input type="radio" name="funcao_escolhida" id="prof" value='Professor' checked>
-        <p>
-          Professor
-        </p>
+        Digite a nova senha:
+        <input type="password" class="form-control" name="senha1" id="senha1" aria-describedby="senha1">
       </label>
+      <p class="warning" id="tamanhoSenha">*A senha não contém 8 caracteres.</p>
       <label>
-        <input type="radio" name="funcao_escolhida" id="coord" value='Coordenação de Curso'>
-        <p>
-          Coordenação de Curso
-        </p>
+        Repita a nova senha:
+        <input type="password" class="form-control" name="senha2" id="senha2" aria-describedby="senha">
       </label>
-      <input type="submit" value="Avançar" name="avancar">
+      <p class="warning" id="senhaIgual">*Insira a mesma senha nos dois campos.</p>
+      <input type="hidden" name="id" value="13">
+      <input type="submit" value="Gravar alteração" name="botao">
     </form>
   </div>
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js "></script>
 </body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js "></script>
+<script src="./js/alterar_senha_usuario.js"></script>
 
 </html>

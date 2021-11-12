@@ -35,8 +35,6 @@ h6 {
 
 form {
   min-height: 20vh;
-  display: flex;
-  flex-direction: column;
   width: fit-content;
   align-items: flex-start;
 }

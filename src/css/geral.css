@@ -1,6 +1,7 @@
 /* Importando variáveis (cores) */
 
 @import url('./variaveis.css');
+
 /* Definição de tamanhos padrões para o html e body */
 
 html, body {
@@ -64,14 +65,8 @@ e animação (fade-in) do container principal */
   text-align: justify;
 }
 
-.title {
-  font-weight: bold;
-}
-
-/* Margem dos forms zerada */
-
-form {
-  margin: 0;
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
 }
 
 /* Organização interna, posicionamento e cores dos inputs */
@@ -88,6 +83,7 @@ form {
   background-color: var(--secundaria);
   border: var(--secundaria);
   color: var(--primaria);
+  max-width: 100%;
 }
 
 .button:hover, button:hover, input[type='button']:hover, input[type='reset']:hover, input[type='submit']:hover {
@@ -106,9 +102,17 @@ select:focus {
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 8" width="30"><path fill="%2336b845" d="M0,0l6,8l6-8"/></svg>');
 }
 
-/* Input dos forms centralizados nas células de tabelas */
+/* Input dos forms centralizados */
 
-td>form>input {
+form {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+}
+
+form>input {
   margin-top: 1.5rem;
 }
 
@@ -116,9 +120,9 @@ label {
   user-select: none;
 }
 
-/* h1, h2, h3, h4, h5, h6, p, td, th {
-  color: black;
-} */
+label>p {
+  display: inline;
+}
 
 p {
   text-align: justify;
