@@ -14,10 +14,10 @@ function verificaIgual() {
   }
 }
 
-let senha1 = document.getElementById('senha1');
-let senha2 = document.getElementById('senha2');
-let tamanhoSenha = document.getElementById('tamanhoSenha');
-let senhaIgual = document.getElementById('senhaIgual');
+const senha1 = document.getElementById('senha1');
+const senha2 = document.getElementById('senha2');
+const tamanhoSenha = document.getElementById('tamanhoSenha');
+const senhaIgual = document.getElementById('senhaIgual');
 
 senha1.addEventListener('keyup', () => {
   verificaTamanho()

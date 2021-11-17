@@ -1,5 +1,5 @@
-let senha = document.getElementById("senha");
-let olho = document.getElementById("mostrar");
+const senha = document.getElementById("senha");
+const olho = document.getElementById("mostrar");
 senha.submit;
 // Clique mostra a senha em texto plano
 olho.addEventListener('click', () => {

@@ -1,7 +1,57 @@
-/* Organização e formatação de formulários */
+#info {
+  margin-bottom: 2.5rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
 
-form * {
-  font-size: 2rem;
+#info * {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  font-weight: bold;
+}
+
+#tabs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: var(--secundaria);
+  color: var(--primaria);
+  border-radius: 1rem 1rem 0 0;
+}
+
+#tabs * {
+  width: 14%;
+  min-width: fit-content;
+  font-weight: bold;
+  padding: 0;
+  line-height: 1.15rem;
+  margin: 0;
+  border-radius: inherit;
+}
+
+.tabcontent {
+  display: none;
+  border-radius: 0 0 1rem 1rem;
+  width: 100%;
+  border: .5rem solid var(--terciaria);
+  padding: .5rem;
+}
+
+.tabcontent * {
+  max-width: 100%;
+}
+
+input.active {
+  background-color: var(--terciaria);
+}
+
+.cadastrar {
+  margin: 0;
 }
 
 table {
@@ -12,6 +62,10 @@ td * {
   margin: 0;
 }
 
+.total {
+  text-align: end;
+}
+
 #categoria * {
   display: inline-block;
 }
@@ -20,14 +74,28 @@ td * {
   font-weight: normal;
 }
 
-@media only screen and (max-width: 297px) {
-  form *{
-    font-size: inherit;
+@media only screen and (max-width: 1261px) {
+  #tabs {
+    justify-content: space-around;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
   }
+  #tabs * {
+    border-radius: 1rem;
+    padding: .3rem;
+  }
+}
 
-  #gravarDados {
+@media only screen and (max-width: 659px) {
+  input.btnWrap {
+    height: fit-content;
     line-height: 2rem;
     white-space: normal;
-    height: fit-content;
+  }
+}
+
+@media only screen and (max-width: 297px) {
+  form * {
+    font-size: inherit;
   }
 }

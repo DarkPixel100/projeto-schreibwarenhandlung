@@ -13,7 +13,7 @@ Você pode ter acesso total da página por [aqui](https://dbo-2021.github.io/pro
 - analise_de_ptds2.html
 - edita_ptd_2_preenchido.html
 - edita_ptd_2_quase_completo.html
-- edita_ptd_2.html
+- edita_ptd_2.html **_WIP_**
 - edita_ptd.html **_DONE_**
 - editar_dados_usuario.html **_DONE_**
 - index.html **_DONE_**
@@ -23,12 +23,16 @@ Você pode ter acesso total da página por [aqui](https://dbo-2021.github.io/pro
 - ptd2.html **_DONE_**
 - visualiza_ptd_preenchido.html
 - visualiza_ptd.html
-- **EXTRA**-esqueci_minha_senha.html **_OnGoing_**
+- **EXTRA**-esqueci_minha_senha.html **_WIP_**
 
 ## Pontos interessantes de mudança e focos principais atuais -
 
-## Arthur - Melhora visual e possivel mudanca do esqueci_minha_senha.(html,css,js)
+## Arthur
 
-## Diego -
+- Melhora visual e possivel mudanca do esqueci_minha_senha.(html,css,js)
+
+## Diego
+
+- edita_ptd_2.(html,css,js) **_WIP_**
 
 ## Marina -
