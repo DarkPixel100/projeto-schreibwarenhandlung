@@ -17,10 +17,204 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
     <!-- Código Próprio -->
     <link rel="stylesheet" type="text/css" href="./css/geral.css">
-    <link rel="stylesheet" type="text/css" href="./css/individual/ptd.css">
+    <link rel="stylesheet" type="text/css" href="./css/individual/visualiza_ptd.css">
 </head>
 
 <body>
+    <!-- Barra superior -->
+    <div id="logout">
+        <img src="./img/Logotipo_IF-white.svg" alt="Logo branca do IFRS" id="logo">
+        <p id="user">
+            <i class="fa fa-user" aria-hidden="true"></i> Nome do usuário: Márcio Torres
+        </p>
+        <p id="perfil">
+            <i class="fas fa-pencil-alt"></i> Perfil de usuário: Professor
+        </p>
+        <a href=".\index.php" id="leave">
+            <i class="fa fa-sign-out-alt" aria-hidden="true"></i>
+            <p>
+                Sair do sistema
+            </p>
+        </a>
+    </div>
+    <!-- Botão do modo escuro -->
+    <div id="darkmode">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon" style="display: none;"></i>
+    </div>
+    <!-- Conteúdo principal -->
+    <div id="wrapper">
+        <h3>Sistema de Administração de Planos de Trabalho Docente</h3>
+        <div>
+            <h4>Visualização das informações do PTD em edição pelo Professor</h4>
+            <!-- Informacoes do professor -->
+            <div>
+                <table class="informacao">
+                    <tr>
+                        <th>Nome:</th>
+                        <td>Márcio Torres</td>
+                    </tr>
+                    <tr>
+                        <th>Função:</th>
+                        <td>Professor</td>
+                    </tr>
+                    <tr>
+                        <th>Período do PTD:</th>
+                        <td>2021/2</td>
+                    </tr>
+                    <tr>
+                        <th>Sala de permanência:</th>
+                        <td>1010</td>
+                    </tr>
+                    <tr>
+                        <th>Área de conhecimento:</td>
+                            <td>Informática </td>
+                    </tr>
+                    <tr>
+                        <th>Categoria:</td>
+                            <td>EBTT</td>
+                    </tr>
+                    <tr>
+                        <th>Regime de trabalho:</td>
+                            <td>DE</td>
+                    </tr>
+                    <tr>
+                        <th>Carga horária total cadastrada neste PTD:</td>
+                            <td>0h</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- Tabelas do PTD -->
+        <div class="tabela">
+            <!-- Tabela de aulas -->
+            <table>
+                <tr>
+                    <table>
+                        <Thead>
+                            <tr>
+                                <th></th>
+                                <th>Disciplina</th>
+                                <th>Turma</th>
+                                <th>Grupo</th>
+                                <th>Curso</th>
+                                <th>C.H. (h)</th>
+                            </tr>
+                        </Thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="5" align="right">total</td>
+                                <td class="ch"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </tr>
+                <!-- Tabela de ensino -->
+                <tr>
+                    <table>
+                        <Thead>
+                            <tr>
+                                <th></th>
+                                <th>Atividades Complementares de Ensino</th>
+                                <th>C.H. (h)</th>
+                            </tr>
+                        </Thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="2" align="right">total</td>
+                                <td class="ch"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </tr>
+                <!-- Tabela de pesquisa -->
+                <tr>
+                    <table>
+                        <Thead>
+                            <tr>
+                                <th></th>
+                                <th>Atividades de Pesquisa</th>
+                                <th>C.H. (h)</th>
+                            </tr>
+                        </Thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="2" align="right">total</td>
+                                <td class="ch"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </tr>
+                <!-- Tabela de extensão -->
+                <tr>
+                    <table>
+                        <Thead>
+                            <tr>
+                                <th></th>
+                                <th>Atividades de Extensão</th>
+                                <th>C.H. (h)</th>
+                            </tr>
+                        </Thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="2" align="right">total</td>
+                                <td class="ch"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </tr>
+                <!-- Tabela Administrativa -->
+                <tr>
+                    <table>
+                        <Thead>
+                            <th></th>
+                            <th>Atividades Administrativas</th>
+                            <th>Portaria</th>
+                            <th>C.H. (h)</th>
+                        </Thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3" align="right">total</td>
+                                <td class="ch"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </tr>
+                <!-- Tabela de especificações -->
+                <tr>
+                    <table>
+                        <Thead>
+                            <th colspan="5" align="center">Especificações Referentes às Aulas e Atendimentos aos Alunos</th>
+                        </Thead>
+                        <tbody align="center">
+                            <td><b>Dia da Semana</b></td>
+                            <td><b>Atividade</b></td>
+                            <td><b>Hora de início</b></td>
+                            <td><b>Hora de término</b></td>
+                            <td><b>Local</b><br>(prédio,sala, laboratório)</td>
+                        </tbody>
+                    </table>
+                </tr>
+                <!-- Tabela de adendos finais -->
+                <tr>
+                    <p><b>Observações do professor:</b></p>
+                </tr>
+            </table>
+        </div>
+        <div id="buttons">
+            <form method="get" action="">
+                <input type="submit" name="botao_voltar" value="Voltar à página inicial e continuar com a edição do PTD posteriormente">
+            </form>
+        </div>
+        <p>ATENÇÃO: Ao submeter o PTD ao Coordenador de Curso, é finalizada a etapa de edição do PTD e você não terá mais acesso à edição do PTD, mas pode enviar um e-mail a quem estiver com o PTD e solicitar que lhe retorne o documento caso tenha que fazer
+            alguma alteração.<br>O preenchimento das informações do PTD é de inteira responsabilidade do professor.</p>
+        <p text-align="center">Nome do Coordenador de Curso: <b>Franciane de Lima Coimbra</b></p>
+        <div id="buttons">
+            <form method="get" action="">
+                <input type="hidden" name="periodo" value="2021/2">
+                <input type="submit" name="botao_coordenador" value="Submeter o PTD ao Coordenador de Curso"></form>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js "></script>
     <script src="./js/darkmode.js"></script>
