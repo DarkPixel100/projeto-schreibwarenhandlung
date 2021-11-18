@@ -30,7 +30,7 @@ Você pode ter acesso total da página por [aqui](https://dbo-2021.github.io/pro
 ## Arthur
 
 - Melhora visual e possivel mudanca do esqueci_minha_senha.(html,css,js)
-
+- Desenvolvimento do visualiza_ptd.html
 ## Diego
 
 - edita_ptd_2.(html,css,js) **_WIP_**
