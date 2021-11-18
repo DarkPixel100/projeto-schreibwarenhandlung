@@ -8,6 +8,10 @@ body {
   background-size: 60vh;
 }
 
+body.dark {
+  background-image: url("../../img/Logotipo_IF-light-gray.svg");
+}
+
 /* Alinhamento dos componentes + borda e padding */
 
 #wrapper {

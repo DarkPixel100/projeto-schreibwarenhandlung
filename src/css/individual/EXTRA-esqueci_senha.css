@@ -1,65 +1,68 @@
 /* Cor e imagem de fundo do body */
 
 body {
-    background-color: var(--secundaria);
-    background-image: url("../../img/Logotipo_IF-dark-green.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 60vh;
+  background-color: var(--secundaria);
+  background-image: url("../../img/Logotipo_IF-dark-green.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60vh;
 }
 
+body.dark {
+  background-image: url("../../img/Logotipo_IF-light-gray.svg");
+}
 
 /* Alinhamento dos componentes + borda e padding */
 
 #wrapper {
-    text-align: center;
-    border-radius: 10px;
-    padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1rem;
 }
 
 
 /* Alinhamento geral */
 
 form {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 label {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 /* Formatação da fonte */
 
 input {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 
 /* Personalização dos botões */
 
 button {
-    margin: 0 0 1.5rem .5rem;
+  margin: 0 0 1.5rem .5rem;
 }
 
 button:focus {
-    background-color: var(--secundaria);
-    border: var(--secundaria);
+  background-color: var(--secundaria);
+  border: var(--secundaria);
 }
 
 
 /* Cor da troca de opcoes */
 
 p {
-    color: var(--extra);
-    text-decoration: underline;
-    text-decoration-color: var(--extra);
-    cursor: pointer
+  color: var(--extra);
+  text-decoration: underline;
+  text-decoration-color: var(--extra);
+  cursor: pointer
 }
 
 
 /* Margem dos ícones FontAwesome */
 
 .fa {
-    margin: 0 .5rem 1.5rem 0;
+  margin: 0 .5rem 1.5rem 0;
 }

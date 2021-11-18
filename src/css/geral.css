@@ -1,6 +1,7 @@
 /* Importando variáveis (cores) */
 
 @import url('./variaveis.css');
+
 /* Definição de tamanhos padrões para o html e body */
 
 html, body {
@@ -16,6 +17,12 @@ body {
   justify-content: center;
 }
 
+* {
+  transition:
+    background-color .3s,
+    background-image .3s;
+}
+
 /* Formatação, cor e posicionamento da barra superior */
 
 #logout {
@@ -27,20 +34,40 @@ body {
   position: fixed;
   width: 100%;
   height: 7rem;
-  z-index: 1;
+  z-index: 2;
 }
 
 /* Formatação dos itens dentro da barra superior */
 
 #logout * {
   margin-bottom: 0.1rem;
-  color: var(--primaria);
+  color: var(--fonteAux);
   font-weight: bold;
   text-align: center;
 }
 
 #logo {
   height: 3.6rem;
+}
+
+#darkmode {
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 5rem;
+  bottom: 5rem;
+  z-index: 2;
+  background-color: var(--terciaria);
+  color: var(--fonteAux);
+  padding: 2rem;
+  border-radius: 50%;
+}
+
+#darkmode.dark {
+  background-color: var(--terciaria);
+  color: var(--fonteAux);
 }
 
 /* Cor, tamanho, posicionamento, organização
@@ -78,27 +105,30 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Organização interna, posicionamento e cores dos inputs */
 
+input, select, textarea {
+  color: var(--fonte);
+}
+
+select option {
+  background-color: var(--primaria);
+}
+
 #buttons {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-/* (Botões) */
-
 .button, button, input[type='button'], input[type='reset'], input[type='submit'] {
   background-color: var(--secundaria);
   border: var(--secundaria);
-  color: var(--primaria);
+  color: var(--fonteAux);
   max-width: 100%;
-  transition: .3s;
 }
 
 .button:hover, button:hover, input[type='button']:hover, input[type='reset']:hover, input[type='submit']:hover, .button:focus, input[type='button']:focus, input[type='reset']:focus, input[type='submit']:focus {
   background-color: var(--terciaria);
 }
-
-/* Cor da borda dos inputs alterada */
 
 input[type='color']:focus, input[type='date']:focus, input[type='datetime']:focus, input[type='datetime-local']:focus, input[type='email']:focus, input[type='month']:focus, input[type='number']:focus, input[type='password']:focus, input[type='search']:focus, input[type='tel']:focus, input[type='text']:focus, input[type='url']:focus, input[type='week']:focus, input:not([type]), textarea:focus, select:focus {
   border-color: var(--secundaria);
@@ -107,7 +137,7 @@ input[type='color']:focus, input[type='date']:focus, input[type='datetime']:focu
 /* Cor da seta do select alterada */
 
 select:focus {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 8" width="30"><path fill="%2336b845" d="M0,0l6,8l6-8"/></svg>');
+  background-image: var(--selectArrow);
 }
 
 /* Input dos forms centralizados */
@@ -146,6 +176,7 @@ a * {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -157,6 +188,7 @@ a * {
   #logout {
     height: 11rem;
   }
+
   #wrapper {
     top: 17vh;
   }
@@ -166,8 +198,15 @@ a * {
   #logout>a>p {
     display: none;
   }
+
   #logout>a>i {
     margin-right: 1rem;
+  }
+
+  #darkmode {
+    right: 1rem;
+    bottom: 1rem;
+    font-size: .7em;
   }
 }
 
