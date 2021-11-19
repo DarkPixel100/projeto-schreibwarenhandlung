@@ -2,10 +2,24 @@
     margin: 0;
 }
 
+
+/* Alteracoes nas tabelas */
+
 .tabela {
     width: 100%;
 }
 
+
+/* Carga horaria */
+
 .ch {
-    width: 20%;
+    width: 7%;
+    text-align: center;
+}
+
+
+/* numeros */
+
+.num {
+    width: 3%;
 }

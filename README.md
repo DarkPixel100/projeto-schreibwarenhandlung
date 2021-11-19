@@ -21,8 +21,8 @@ Você pode ter acesso total da página por [aqui](https://dbo-2021.github.io/pro
 - ptd_em_analise.html
 - ptd.html **_DONE_**
 - ptd2.html **_DONE_**
-- visualiza_ptd_preenchido.html
-- visualiza_ptd.html
+- visualiza_ptd_preenchido.html **_WIP_**
+- visualiza_ptd.html **_WIP_**
 - **EXTRA**-esqueci_minha_senha.html **_WIP_**
 
 ## Pontos interessantes de mudança e focos principais atuais -
