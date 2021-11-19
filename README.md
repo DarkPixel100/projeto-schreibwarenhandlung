@@ -9,8 +9,8 @@ Você pode ter acesso total da página por [aqui](https://dbo-2021.github.io/pro
 - Importar Milligram **_DONE_**
 - Importar FontAwesome5 **_DONE_**
 - alterar_senha_usuario.html **_DONE_**
-- analise_de_ptds.html
-- analise_de_ptds2.html
+- analise_de_ptds.html **_DONE_**
+- analise_de_ptds2.html **_DONE_**
 - edita_ptd_2_preenchido.html
 - edita_ptd_2_quase_completo.html
 - edita_ptd_2.html **_WIP_**
@@ -36,3 +36,5 @@ Você pode ter acesso total da página por [aqui](https://dbo-2021.github.io/pro
 - edita_ptd_2.(html,css,js) **_WIP_**
 
 ## Marina -
+
+- Organização e melhora visual nas páginas analise_de_ptds.html e analise_de_ptds2.html
