@@ -49,10 +49,41 @@
   <div id="wrapper">
     <h3 class="title">Sistema de Administração de Planos de Trabalho Docente</h3>
     <h3 id="pageTitle">Análise de PTDs pela coordenação de curso</h3>
-    </div>
+  </div>
     <div class="container">
       <h4>PTDs a avaliar:</h4>
-      <p>No momento, você não tem PTDs a avaliar.</p>
+      <!-- Tabela dos PTDs pendentes -->
+      <table>
+        <tr>
+          <th></th>
+          <th>Período</th>
+          <th>Professor</th>
+          <th>Observação da Coordenação de Curso</th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2021/2</td>
+          <td>Igor Avila Pereira</td>
+          <td></td>
+          <td>
+            <form method="get" action=""><input type="hidden" name="id_do_ptd" value="173"><input
+                type="hidden" name="id_do_professor_submeteu_o_ptd" value="59"><input type="submit" value="Avaliar PTD"
+                name="botao"></form>
+          </td>
+          <td>
+            <form method="get" action=""><input type="hidden" name="id_do_ptd" value="173"><input
+                type="hidden" name="id" value="13"><input type="submit" value="Devolver PTD ao professor"
+                name="Devolver_PTD_ao_professor"></form>
+          </td>
+          <td>
+            <form method="get" action=""><input type="hidden" name="id_do_ptd" value="173"><input
+                type="hidden" name="id" value="13"><input type="submit" value="Aprovar PTD" name="aprovar_ptd"></form>
+          </td>
+        </tr>
+      </table>
       <form method="get" action="">
         <input type="hidden" name="id" value="13">
         <input type="submit" name="botao_editar_perfil" value="Alterar Senha">
@@ -60,7 +91,8 @@
   </div>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js "></script>
-  <script src="./js/darkmode.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src=".\js\personalizado.js"></script>
 </body>
 
 </html>

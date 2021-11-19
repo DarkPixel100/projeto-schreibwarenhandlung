@@ -2,7 +2,10 @@
   position: relative;
   top: 10em;
 }
-.container h4 {
+h4 {
   text-align: left;
   font-weight: bold;
+}
+th, td, form {
+  text-align: center;
 }
