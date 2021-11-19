@@ -4,7 +4,7 @@
 
 Você pode ter acesso total da página por [aqui](https://dbo-2021.github.io/projeto-schreibwarenhandlung/src/).
 
-## To do List (arquivos) - ~41% Concluído
+## To do List (arquivos) - ~66% Concluído
 
 - Importar Milligram **_DONE_**
 - Importar FontAwesome5 **_DONE_**
@@ -23,7 +23,7 @@ Você pode ter acesso total da página por [aqui](https://dbo-2021.github.io/pro
 - ptd2.html **_DONE_**
 - visualiza_ptd_preenchido.html **_WIP_**
 - visualiza_ptd.html **_WIP_**
-- **EXTRA**-esqueci_minha_senha.html **_WIP_**
+- **EXTRA**-esqueci_minha_senha.html **_DONE_**
 
 ## Pontos interessantes de mudança e focos principais atuais -
 
@@ -31,6 +31,7 @@ Você pode ter acesso total da página por [aqui](https://dbo-2021.github.io/pro
 
 - Melhora visual e possivel mudanca do esqueci_minha_senha.(html,css,js)
 - Desenvolvimento do visualiza_ptd.html
+
 ## Diego
 
 - edita_ptd_2.(html,css,js) **_WIP_**
