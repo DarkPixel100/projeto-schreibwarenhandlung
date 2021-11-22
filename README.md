@@ -18,7 +18,7 @@ Você pode ter acesso total da página por [aqui](https://dbo-2021.github.io/pro
 - editar_dados_usuario.html **_DONE_**
 - index.html **_DONE_**
 - login.html **_DONE_**
-- ptd_em_analise.html **_WIP_**
+- ptd_em_analise.html **_DONE_**
 - ptd.html **_DONE_**
 - ptd2.html **_DONE_**
 - visualiza_ptd_preenchido.html **_DONE_**
@@ -29,7 +29,7 @@ Você pode ter acesso total da página por [aqui](https://dbo-2021.github.io/pro
 
 ## Arthur
 
--  ptd_em_analise.html **_WIP_**
+-
 
 ## Diego
 
