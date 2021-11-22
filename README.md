@@ -18,19 +18,18 @@ Você pode ter acesso total da página por [aqui](https://dbo-2021.github.io/pro
 - editar_dados_usuario.html **_DONE_**
 - index.html **_DONE_**
 - login.html **_DONE_**
-- ptd_em_analise.html
+- ptd_em_analise.html **_WIP_**
 - ptd.html **_DONE_**
 - ptd2.html **_DONE_**
-- visualiza_ptd_preenchido.html **_WIP_**
-- visualiza_ptd.html **_WIP_**
+- visualiza_ptd_preenchido.html **_DONE_**
+- visualiza_ptd.html **_DONE_**
 - **EXTRA**-esqueci_minha_senha.html **_DONE_**
 
 ## Pontos interessantes de mudança e focos principais atuais -
 
 ## Arthur
 
-- Melhora visual e possivel mudanca do esqueci_minha_senha.(html,css,js)
-- Desenvolvimento do visualiza_ptd.html
+-  ptd_em_analise.html **_WIP_**
 
 ## Diego
 
