@@ -46,6 +46,20 @@
   max-width: 100%;
 }
 
+#selectDisciplina {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#selectDisciplina * {
+ width: fit-content;
+}
+
+.cargaHoraria>span>input{
+  width: 4em;
+}
+
 input.active {
   background-color: var(--terciaria);
 }

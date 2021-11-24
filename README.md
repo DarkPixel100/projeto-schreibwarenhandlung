@@ -4,16 +4,16 @@
 
 Você pode ter acesso total da página por [aqui](https://dbo-2021.github.io/projeto-schreibwarenhandlung/src/).
 
-## To do List (arquivos) - ~83% Concluído
+## To do List (arquivos) - ~89% Concluído
 
-- Importar Milligram **_DONE_**
-- Importar FontAwesome5 **_DONE_**
+- Importar Milligram (localmente) **_DONE_**
+- Importar FontAwesome5 (localmente) **_DONE_**
 - alterar_senha_usuario.html **_DONE_**
 - analise_de_ptds.html **_DONE_**
 - analise_de_ptds2.html **_DONE_**
 - edita_ptd_2_preenchido.html
 - edita_ptd_2_quase_completo.html
-- edita_ptd_2.html **_WIP_**
+- edita_ptd_2.html **_DONE_**
 - edita_ptd.html **_DONE_**
 - editar_dados_usuario.html **_DONE_**
 - index.html **_DONE_**
@@ -33,7 +33,7 @@ Você pode ter acesso total da página por [aqui](https://dbo-2021.github.io/pro
 
 ## Diego
 
-- edita_ptd_2.(html,css,js) **_WIP_**
+- edita_ptd_2.(html,css,js)
 
 ## Marina -
 

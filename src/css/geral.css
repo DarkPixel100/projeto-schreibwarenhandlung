@@ -37,6 +37,10 @@ body {
   z-index: 2;
 }
 
+#logout.coordenador {
+  background-color: var(--extra);
+}
+
 /* Formatação dos itens dentro da barra superior */
 
 #logout * {
@@ -109,8 +113,19 @@ input, select, textarea {
   color: var(--fonte);
 }
 
-select option {
+select option, input[type="time"] {
   background-color: var(--primaria);
+}
+
+input[type="time"] {
+  border: 0.1rem solid #d1d1d1;
+  border-radius: 0.4rem;
+}
+
+input[type="time"]:focus-visible {
+  border-color: var(--secundaria);
+  outline-offset: unset;
+  outline: unset;
 }
 
 #buttons {

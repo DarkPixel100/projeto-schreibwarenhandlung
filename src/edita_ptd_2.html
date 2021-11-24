@@ -8,14 +8,13 @@
   <title>Edita PTD</title>
   <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
   <!-- Font Awesome 5 -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
-    integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.css">
   <!-- Google Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
   <!-- CSS Reset -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
   <!-- Milligram CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+  <link rel="stylesheet" href="./milligram-1.4.1/dist/milligram.css">
   <!-- Código Próprio -->
   <link rel="stylesheet" type="text/css" href="./css/geral.css">
   <link rel="stylesheet" type="text/css" href="./css/individual/edita_ptd.css">
@@ -49,10 +48,6 @@
   <div id="wrapper">
     <h3 class="title">Sistema de Administração de Planos de Trabalho Docente</h3>
     <h3 id="pageTitle">Edição do PTD pelo Professor</h3>
-    <!-- <form method="get" action="">
-      <input type="submit" value="Voltar à página inicial" name="botao">
-      <input type="hidden" name="id" value=13>
-    </form> -->
     <div id="info">
       <span>
         <p>Professor: Márcio Torres.</p>
@@ -70,6 +65,7 @@
         <p>Carga horária semanal total cadastrada neste PTD: 0h.</p>
       </span>
     </div>
+    <!-- Abas -->
     <div id="tabs">
       <input type="button" class="tabhead active" value="Aulas"></input>
       <input type="button" class="tabhead" value="Ensino"></input>
@@ -79,6 +75,7 @@
       <input type="button" class="tabhead" value="Atendimentos"></input>
       <input type="button" class="tabhead" value="Observações"></input>
     </div>
+    <!-- Conteúdo das abas -->
     <div id="aulas" class="tabcontent">
       <table>
         <thead>
@@ -102,55 +99,36 @@
       <form method="get" action="">
         <table>
           <tr>
-            <td>Curso/Disciplina: </td>
-            <td colspan="2">
-              <select id="modalidade">
-                <option value="Integrado">Integrado</option>
-                <option value="Subsequente">Subsequente</option>
-                <option value="Superior">Ensino Superior</option>
-              </select>
-              <select id="curso">
-                <option value="Automação Industrial">Automação Industrial</option>
-              </select>
-              <select id="disciplina" name="id_disciplina">
-                <option value="200">Artes</option>
-              </select>
+            <th>Modalidade/Curso/Disciplina: </th>
+            <td id="selectDisciplina">
+              <span>
+                Modalidade:
+                <select id="modalidade">
+                  <option value="Integrado">Integrado</option>
+                  <option value="Subsequente">Subsequente</option>
+                  <option value="Superior">Ensino Superior</option>
+                </select>
+              </span>
+              <span>
+                Curso:
+                <select id="curso">
+                  <option value="Automação Industrial">Automação Industrial</option>
+                </select>
+              </span>
+              <span>
+                Disciplina:
+                <select id="disciplina" name="id_disciplina">
+                  <option value="200">Artes</option>
+                </select>
+              </span>
             </td>
           </tr>
           <tr>
-            <td>Turma dos cursos da <br>modalidade Integrado:</td>
-            <td colspan="2"><select name="turma">
-                <option value=""> </option>
-                <option value="1A">1A</option>
-                <option value="1A1">1A1</option>
-                <option value="2A">2A</option>
-                <option value="3A">3A</option>
-                <option value="4A">4A</option>
-                <option value="1B">1B</option>
-                <option value="1B1">1B1</option>
-                <option value="2B">2B</option>
-                <option value="3B">3B</option>
-                <option value="4B">4B</option>
-                <option value="1C">1C</option>
-                <option value="1C1">1C1</option>
-                <option value="2C">2C</option>
-                <option value="3C">3C</option>
-                <option value="4C">4C</option>
-                <option value="1D">1D</option>
-                <option value="1D1">1D1</option>
-                <option value="2D">2D</option>
-                <option value="3D">3D</option>
-                <option value="4D">4D</option>
+            <th>Turma dos cursos da modalidade Integrado:</th>
+            <td>
+              <select id="turma" name="turma">
                 <option value="1E">1E</option>
-                <option value="1E1">1E1</option>
-                <option value="2E">2E</option>
-                <option value="3E">3E</option>
-                <option value="4E">4E</option>
-                <option value="1F">1F</option>
-                <option value="1F1">1F1</option>
-                <option value="2F">2F</option>
-                <option value="3F">3F</option>
-                <option value="4F">4F</option>
+              </select>
             </td>
           </tr>
           <tr>
@@ -163,7 +141,7 @@
             </td>
           </tr>
           <tr>
-            <td>Divisão da turma (grupo):</td>
+            <th>Divisão da turma (grupo):</th>
             <td>
               <input type="text" name="grupo" list="grupo"></input>
               <datalist id="grupo">
@@ -175,9 +153,10 @@
             </td>
           </tr>
           <tr>
-            <td>Carga horária semanal:</td>
-            <td>
-              <input type="text" name="carga_horaria">
+            <th>Carga horária semanal:</th>
+            <td class="cargaHoraria">
+              <input type="hidden" name="carga_horaria" value="0" class="carga_horaria">
+              <span><input type="number" class="horas" value="0" min="0" max="167"> horas</span> <span><input type="number" class="minutos" value="0" min="0" max="59"> minutos</span>
             </td>
           </tr>
         </table>
@@ -189,12 +168,8 @@
       <table>
         <thead>
           <tr>
-            <th>
-              Atividades Complementares de Ensino
-            </th>
-            <th>
-              C.H. (h)
-            </th>
+            <th>Atividades Complementares de Ensino</th>
+            <th>C.H. (h)</th>
           </tr>
         </thead>
         <tbody>
@@ -208,17 +183,16 @@
       <form method="get" action="">
         <table>
           <tr>
-            <th>
-              Atividade Complementar de Ensino:
-            </th>
+            <th>Atividade Complementar de Ensino:</th>
             <td>
               <input type="text" name="atividade">
             </td>
           </tr>
           <tr>
             <th>Carga horária semanal:</th>
-            <td>
-              <input type="text" name="carga_horaria">
+            <td class="cargaHoraria">
+              <input type="hidden" name="carga_horaria" value="0" class="carga_horaria">
+              <span><input type="number" class="horas" value="0" min="0" max="167"> horas</span> <span><input type="number" class="minutos" value="0" min="0" max="59"> minutos</span>
             </td>
           </tr>
         </table>
@@ -230,12 +204,8 @@
       <table>
         <thead>
           <tr>
-            <th>
-              Atividades de Pesquisa
-            </th>
-            <th>
-              C.H. (h)
-            </th>
+            <th>Atividades de Pesquisa</th>
+            <th>C.H. (h)</th>
           </tr>
         </thead>
         <tbody>
@@ -254,8 +224,9 @@
           </tr>
           <tr>
             <th>Carga horária semanal:</th>
-            <td>
-              <input type="text" name="carga_horaria">
+            <td class="cargaHoraria">
+              <input type="hidden" name="carga_horaria" value="0" class="carga_horaria">
+              <span><input type="number" class="horas" value="0" min="0" max="167"> horas</span> <span><input type="number" class="minutos" value="0" min="0" max="59"> minutos</span>
             </td>
           </tr>
         </table>
@@ -289,8 +260,9 @@
           </tr>
           <tr>
             <th>Carga horária semanal:</th>
-            <td>
-              <input type="text" name="carga_horaria">
+            <td class="cargaHoraria">
+              <input type="hidden" name="carga_horaria" value="0" class="carga_horaria">
+              <span><input type="number" class="horas" value="0" min="0" max="167"> horas</span> <span><input type="number" class="minutos" value="0" min="0" max="59"> minutos</span>
             </td>
           </tr>
         </table>
@@ -326,13 +298,14 @@
           <tr>
             <th>Portaria:</td>
             <td>
-              <input type="text" name="portaria" maxlength="15">
+              <input type="text" name="portaria">
             </td>
           </tr>
           <tr>
             <th>Carga horária semanal:</th>
-            <td>
-              <input type="text" name="carga_horaria">
+            <td class="cargaHoraria">
+              <input type="hidden" name="carga_horaria" value="0" class="carga_horaria">
+              <span><input type="number" class="horas" value="0" min="0" max="167"> horas</span> <span><input type="number" class="minutos" value="0" min="0" max="59"> minutos</span>
             </td>
           </tr>
         </table>
@@ -342,9 +315,7 @@
     </div>
     <div id="atendimentos" class="tabcontent">
       <p style="text-align: center; margin: 0;">
-        <b>
-          Especificações Referentes às Aulas e Atendimentos aos Alunos
-        </b>
+        <b>Especificações Referentes às Aulas e Atendimentos aos Alunos</b>
       </p>
       <table style="text-align: center;">
         <thead>
@@ -386,199 +357,29 @@
           <tr>
             <th>Atividade:</th>
             <td>
-              <input type="text" name="atividade" maxlength="44">
+              <input type="text" name="atividade">
             </td>
           </tr>
           <tr>
             <th>Hora de início:</th>
-            <td>
-              <select name="horai">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-                <option value="13">13</option>
-                <option value="14">14</option>
-                <option value="15">15</option>
-                <option value="16">16</option>
-                <option value="17">17</option>
-                <option value="18">18</option>
-                <option value="19">19</option>
-                <option value="20">20</option>
-                <option value="21">21</option>
-                <option value="22">22</option>
-                <option value="23">23</option>
-              </select>
-              <select name="minutoi">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-                <option value="13">13</option>
-                <option value="14">14</option>
-                <option value="15">15</option>
-                <option value="16">16</option>
-                <option value="17">17</option>
-                <option value="18">18</option>
-                <option value="19">19</option>
-                <option value="20">20</option>
-                <option value="21">21</option>
-                <option value="22">22</option>
-                <option value="23">23</option>
-                <option value="24">24</option>
-                <option value="25">25</option>
-                <option value="26">26</option>
-                <option value="27">27</option>
-                <option value="28">28</option>
-                <option value="29">29</option>
-                <option value="30">30</option>
-                <option value="31">31</option>
-                <option value="32">32</option>
-                <option value="33">33</option>
-                <option value="34">34</option>
-                <option value="35">35</option>
-                <option value="36">36</option>
-                <option value="37">37</option>
-                <option value="38">38</option>
-                <option value="39">39</option>
-                <option value="40">40</option>
-                <option value="41">41</option>
-                <option value="42">42</option>
-                <option value="43">43</option>
-                <option value="44">44</option>
-                <option value="45">45</option>
-                <option value="46">46</option>
-                <option value="47">47</option>
-                <option value="48">48</option>
-                <option value="49">49</option>
-                <option value="50">50</option>
-                <option value="51">51</option>
-                <option value="52">52</option>
-                <option value="53">53</option>
-                <option value="54">54</option>
-                <option value="55">55</option>
-                <option value="56">56</option>
-                <option value="57">57</option>
-                <option value="58">58</option>
-                <option value="59">59</option>
-              </select>
+            <td id="tempoi">
+              <input type="hidden" name="horai">
+              <input type="hidden" name="minutoi">
+              <input type="time" value="00:00">
             </td>
           </tr>
           <tr>
             <th>Hora de término:</th>
-            <td>
-              <select name="horat">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-                <option value="13">13</option>
-                <option value="14">14</option>
-                <option value="15">15</option>
-                <option value="16">16</option>
-                <option value="17">17</option>
-                <option value="18">18</option>
-                <option value="19">19</option>
-                <option value="20">20</option>
-                <option value="21">21</option>
-                <option value="22">22</option>
-                <option value="23">23</option>
-              </select>
-              <select name="minutot">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-                <option value="13">13</option>
-                <option value="14">14</option>
-                <option value="15">15</option>
-                <option value="16">16</option>
-                <option value="17">17</option>
-                <option value="18">18</option>
-                <option value="19">19</option>
-                <option value="20">20</option>
-                <option value="21">21</option>
-                <option value="22">22</option>
-                <option value="23">23</option>
-                <option value="24">24</option>
-                <option value="25">25</option>
-                <option value="26">26</option>
-                <option value="27">27</option>
-                <option value="28">28</option>
-                <option value="29">29</option>
-                <option value="30">30</option>
-                <option value="31">31</option>
-                <option value="32">32</option>
-                <option value="33">33</option>
-                <option value="34">34</option>
-                <option value="35">35</option>
-                <option value="36">36</option>
-                <option value="37">37</option>
-                <option value="38">38</option>
-                <option value="39">39</option>
-                <option value="40">40</option>
-                <option value="41">41</option>
-                <option value="42">42</option>
-                <option value="43">43</option>
-                <option value="44">44</option>
-                <option value="45">45</option>
-                <option value="46">46</option>
-                <option value="47">47</option>
-                <option value="48">48</option>
-                <option value="49">49</option>
-                <option value="50">50</option>
-                <option value="51">51</option>
-                <option value="52">52</option>
-                <option value="53">53</option>
-                <option value="54">54</option>
-                <option value="55">55</option>
-                <option value="56">56</option>
-                <option value="57">57</option>
-                <option value="58">58</option>
-                <option value="59">59</option>
-              </select>
+            <td id="tempot">
+              <input type="hidden" name="horat">
+              <input type="hidden" name="minutot">
+              <input type="time" value="00:00">
             </td>
           </tr>
           <tr>
             <th>Local:</th>
             <td>
-              <input type="text" name="local" maxlength="44">
+              <input type="text" name="local">
             </td>
           <tr>
         </table>
