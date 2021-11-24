@@ -24,6 +24,8 @@ tabs.addEventListener('click', e => abrirAba(e.target, content));
 
 import { listaDisciplinas } from './lista.js';
 
+// Funções que trocam as opções dos select's seguintes baseadas na opção escolhida
+
 function selecionarModalidade() {
   modalidade = modalidadeSelect.value;
   let cursosHTML = '';
@@ -46,10 +48,15 @@ function selecionarCurso() {
   turmaSelect.innerHTML = turmas[curso] ? turmas[curso] : '<option value=""> </option>';
 }
 
+// Definindo elementos (select's)
+
 const modalidadeSelect = document.getElementById('modalidade');
 const cursoSelect = document.getElementById('curso');
 const disciplinaSelect = document.getElementById('disciplina');
 const turmaSelect = document.getElementById('turma');
+
+// Definindo lista de elementos para cada modalidade
+
 const cursosIntegrado = `
 <option value="Automação Industrial">Automação Industrial</option>
 <option value="Eletrotécnica">Eletrotécnica</option>
@@ -71,6 +78,9 @@ const cursosSuperior = `
 <option value="Tecnologia em Análise e Desenvolvimento de Sistemas">Tecnologia em Análise e Desenvolvimento de Sistemas</option>
 <option value="Tecnologia em Construção de Edifícios">Tecnologia em Construção de Edifícios</option>
 `;
+
+// Lista de turmas para cada curso
+
 const turmas = {
   "Automação Industrial": `
     <option value="1E">1E</option>
@@ -128,6 +138,8 @@ cursoSelect.addEventListener('click', selecionarCurso);
 // Input de Carga Horária
 
 function setValorHoras(element) {
+  /* Converte 2 inputs de tipo numérico que representam horas e minutos -respectivamente- para
+  um único número total de horas, com 2 casas decimais após a vírgula */
   const finalInput = element.parentElement.parentElement.children[0];
   let horasBaseInput = element.parentElement.parentElement.children[1].children[0];
   let minutosBaseInput = element.parentElement.parentElement.children[2].children[0];
@@ -144,11 +156,11 @@ const inputsMinutos = Array.from(document.getElementsByClassName('minutos'));
 
 // Horários de início e término de atendimentos
 
-function defineHoraAtendimento() {
-  hInicio.children[0].value = hInicio.children[2].value.substr(0,2);
-  hInicio.children[1].value = hInicio.children[2].value.substr(3,2);
-  hTermino.children[0].value = hTermino.children[2].value.substr(0,2);
-  hTermino.children[1].value = hTermino.children[2].value.substr(3,2);
+function defineHoraAtendimento() { // Converte os dois input's de tipo "time" em dois pares de dígitos (hora e minuto) iniciais e finais, respectivamente
+  hInicio.children[0].value = parseInt(hInicio.children[2].value.substr(0,2));
+  hInicio.children[1].value = parseInt(hInicio.children[2].value.substr(3,2));
+  hTermino.children[0].value = parseInt(hTermino.children[2].value.substr(0,2));
+  hTermino.children[1].value = parseInt(hTermino.children[2].value.substr(3,2));
 }
 
 const hInicio = document.getElementById('tempoi');
@@ -161,7 +173,7 @@ hTermino.addEventListener('keyup', defineHoraAtendimento);
 
 // Geral
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => { // Chamando funções que devem ser executadas quando a página carrega
   abrirAba(initial, content)
   selecionarModalidade();
   selecionarCurso();

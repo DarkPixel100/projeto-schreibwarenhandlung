@@ -1,3 +1,5 @@
+// Troca o esquema de cores da página entre: modo claro e modo escuro
+
 function setMode (mode) {
   if (mode === 'dark') {
     document.body.classList.add('dark');

@@ -1,3 +1,4 @@
+// Lista movida para outro arquivo por questão de modularidade
 export const listaDisciplinas = `
 <option value="238">Eletrotécnica - Integrado -> Artes</option>
 <option value="263">Eletrotécnica - Integrado -> Automação Industrial</option>
