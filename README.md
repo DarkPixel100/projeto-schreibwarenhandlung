@@ -4,7 +4,7 @@
 
 Você pode ter acesso total da página por [aqui](https://dbo-2021.github.io/projeto-schreibwarenhandlung/src/).
 
-## To do List (arquivos) - ~66% Concluído
+## To do List (arquivos) - ~83% Concluído
 
 - Importar Milligram **_DONE_**
 - Importar FontAwesome5 **_DONE_**
