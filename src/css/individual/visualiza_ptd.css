@@ -1,3 +1,33 @@
-.total {
-  text-align: end;
+.informacao {
+  margin: 0;
+}
+
+
+/* Alteracoes nas tabelas */
+
+.tabela {
+  width: 100%;
+}
+
+
+/* Carga horaria */
+
+.ch {
+  width: 7%;
+  text-align: center;
+}
+
+
+/* numeros */
+
+.num {
+  width: 3%;
+}
+
+
+/* Titulos específicos */
+
+h5 {
+  text-align: left;
+  font-weight: bold;
 }

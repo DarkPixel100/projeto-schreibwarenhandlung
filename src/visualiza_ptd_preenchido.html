@@ -8,13 +8,14 @@
   <title>Visualiza PTD</title>
   <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
   <!-- Font Awesome 5 -->
-  <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+    integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
   <!-- Google Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
   <!-- CSS Reset -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
   <!-- Milligram CSS -->
-  <link rel="stylesheet" href="./milligram-1.4.1/dist/milligram.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
   <!-- Código Próprio -->
   <link rel="stylesheet" type="text/css" href="./css/geral.css">
   <link rel="stylesheet" type="text/css" href="./css/individual/visualiza_ptd.css">
@@ -48,7 +49,7 @@
     <h4>Visualização das informações do PTD em edição pelo Professor</h4>
     <!-- Informacoes do professor -->
     <div>
-      <table>
+      <table class="informacao">
         <tr>
           <th>Nome:</th>
           <td>Márcio Torres</td>
@@ -66,161 +67,175 @@
           <td>1010</td>
         </tr>
         <tr>
-          <th>Área de conhecimento:</th>
+          <th>Área de conhecimento:</td>
           <td>Informática</td>
         </tr>
         <tr>
-          <th>Categoria:</th>
+          <th>Categoria:</td>
           <td>Magistério do EBTT</td>
         </tr>
         <tr>
-          <th>Regime de trabalho:</th>
+          <th>Regime de trabalho:</td>
           <td>DE</td>
         </tr>
         <tr>
-          <th>Carga horária total cadastrada neste PTD:</th>
+          <th>Carga horária total cadastrada neste PTD:</td>
           <td>24h</td>
         </tr>
       </table>
     </div>
     <!-- Tabelas do PTD -->
-    <!-- Tabela de aulas -->
-    <table>
-      <thead>
+    <div class="tabela">
+      <!-- Tabela de aulas -->
+      <table>
         <tr>
-          <th>Nº</th>
-          <th>Disciplina</th>
-          <th>Turma</th>
-          <th>Grupo</th>
-          <th>Curso</th>
-          <th>C.H. (h)</th>
+          <table>
+            <thead>
+              <tr>
+                <th class="num">Nº</th>
+                <th>Disciplina</th>
+                <th>Turma</th>
+                <th>Grupo</th>
+                <th>Curso</th>
+                <th class="ch">C.H. (h)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Desenvolvimento Baseado em Objetos</td>
+                <td>2C</td>
+                <td></td>
+                <td>Informática para Internet - Integrado</td>
+                <td class="ch">4</td>
+              </tr>
+              <tr>
+                <td colspan="5" align="right">Total</td>
+                <td class="ch">4</td>
+              </tr>
+            </tbody>
+          </table>
         </tr>
-      </thead>
-      <tbody>
+        <!-- Tabela de ensino -->
         <tr>
-          <td>1</td>
-          <td>Desenvolvimento Baseado em Objetos</td>
-          <td>2C</td>
-          <td></td>
-          <td>Informática para Internet - Integrado</td>
-          <td>4</td>
+          <table>
+            <thead>
+              <tr>
+                <th class="num">Nº</th>
+                <th>Atividades Complementares de Ensino</th>
+                <th class="ch">C.H. (h)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Atendimento via Discord e E-mail</td>
+                <td class="ch">8</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Projeto Ensino: A monitoria online dos aprendizes de programação para assegurar a permanência e
+                  êxito durante o ensino remoto emergencial e promover uma comunidade virtual de aprendizagem</td>
+                <td class="ch">4</td>
+              </tr>
+              <tr>
+                <td colspan="2" align="right">Total</td>
+                <td class="ch">12</td>
+              </tr>
+            </tbody>
+          </table>
         </tr>
+        <!-- Tabela de pesquisa -->
         <tr>
-          <td colspan="5" class="total">Total</td>
-          <td>4</td>
+          <table>
+            <thead>
+              <tr>
+                <th class="num">Nº</th>
+                <th>Atividades de Pesquisa</th>
+                <th class="ch">C.H. (h)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="2" align="right">Total</td>
+                <td class="ch"></td>
+              </tr>
+            </tbody>
+          </table>
         </tr>
-      </tbody>
-    </table>
-    <!-- Tabela de ensino -->
-    <table>
-      <thead>
+        <!-- Tabela de extensão -->
         <tr>
-          <th>Nº</th>
-          <th>Atividades Complementares de Ensino</th>
-          <th>C.H. (h)</th>
+          <table>
+            <thead>
+              <tr>
+                <th class="num">Nº</th>
+                <th>Atividades de Extensão</th>
+                <th class="ch">C.H. (h)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="2" align="right">Total</td>
+                <td class="ch"></td>
+              </tr>
+            </tbody>
+          </table>
         </tr>
-      </thead>
-      <tbody>
+        <!-- Tabela Administrativa -->
         <tr>
-          <td>1</td>
-          <td>Atendimento via Discord e E-mail</td>
-          <td>8</td>
+          <table>
+            <thead>
+              <th class="num">Nº</th>
+              <th>Atividades Administrativas</th>
+              <th>Portaria</th>
+              <th class="ch">C.H. (h)</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Coordenação do curso superior de Tecnologia em Análise e Desenvolvimento de Sistemas</td>
+                <td>104/2020</td>
+                <td class="ch">8</td>
+              </tr>
+              <tr>
+                <td colspan="3" align="right">Total</td>
+                <td class="ch">8</td>
+              </tr>
+            </tbody>
+          </table>
         </tr>
+        <!-- Tabela de especificações -->
         <tr>
-          <td>2</td>
-          <td>
-            Projeto Ensino: A monitoria online dos aprendizes de programação para assegurar a permanência e
-            êxito durante o ensino remoto emergencial e promover uma comunidade virtual de aprendizagem
-          </td>
-          <td>4</td>
+          <table>
+            <thead>
+              <th colspan="5" align="center">Especificações Referentes às Aulas e Atendimentos aos Alunos</th>
+            </thead>
+            <tbody align="center">
+              <tr>
+                <td><b>Dia da Semana</b></td>
+                <td><b>Atividade</b></td>
+                <td><b>Hora de início</b></td>
+                <td><b>Hora de término</b></td>
+                <td><b>Local</b><br>(prédio,sala, laboratório)</td>
+              </tr>
+            </tbody>
+            <tfoot align="center">
+              <tr>
+                <td>Segunda-feira</td>
+                <td>Atendimento síncrono</td>
+                <td>14:00</td>
+                <td>15:00</td>
+                <td>Discord</td>
+              </tr>
+            </tfoot>
+          </table>
         </tr>
+        <!-- Tabela de adendos finais -->
         <tr>
-          <td class="total" colspan="2">Total</td>
-          <td>12</td>
+          <p><b>Observações do professor: </b>Sem observações.</p>
         </tr>
-      </tbody>
-    </table>
-    <!-- Tabela de pesquisa -->
-    <table>
-      <thead>
-        <tr>
-          <th>Nº</th>
-          <th>Atividades de Pesquisa</th>
-          <th>C.H. (h)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="total" colspan="2">Total</td>
-          <td>0</td>
-        </tr>
-      </tbody>
-    </table>
-    <!-- Tabela de extensão -->
-    <table>
-      <thead>
-        <tr>
-          <th>Nº</th>
-          <th>Atividades de Extensão</th>
-          <th>C.H. (h)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="total" colspan="2">Total</td>
-          <td>0</td>
-        </tr>
-      </tbody>
-    </table>
-    <!-- Tabela Administrativa -->
-    <table>
-      <thead>
-        <tr>
-          <th>Nº</th>
-          <th>Atividades Administrativas</th>
-          <th>Portaria</th>
-          <th>C.H. (h)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>Coordenação do curso superior de Tecnologia em Análise e Desenvolvimento de Sistemas</td>
-          <td>104/2020</td>
-          <td>8</td>
-        </tr>
-        <tr>
-          <td colspan="3" class="total">Total</td>
-          <td>8</td>
-        </tr>
-      </tbody>
-    </table>
-    <!-- Tabela de atendimentos -->
-    <p style="text-align: center; margin: 0;">
-      <b>Especificações Referentes às Aulas e Atendimentos aos Alunos</b>
-    </p>
-    <table style="text-align: center;">
-      <thead>
-        <tr>
-          <th>Dia da Semana</th>
-          <th>Atividade</th>
-          <th>Hora de início</th>
-          <th>Hora de término</th>
-          <th colspan="2">Local (prédio, sala, laboratório, link)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Segunda-feira</td>
-          <td>Atendimento síncrono</td>
-          <td>14:00</td>
-          <td>15:00</td>
-          <td>Discord</td>
-        </tr>
-      </tbody>
-    </table>
-    <!-- Tabela de adendos finais -->
-    <p><b>Observações do professor:</b> Sem observações.</p>
+      </table>
+    </div>
     <form method="get" action="">
       <input type="submit" name="botao_voltar"
         value="Voltar à página inicial e continuar com a edição do PTD posteriormente">
@@ -228,8 +243,8 @@
     <p>
       ATENÇÃO: Ao submeter o PTD ao Coordenador de Curso, é finalizada a etapa de edição do PTD e você não terá mais
       acesso à edição do PTD, mas pode enviar um e-mail a quem estiver com o PTD e solicitar que lhe retorne o documento
-      caso tenha que fazer alguma alteração.<br>
-      O preenchimento das informações do PTD é de inteira responsabilidade do professor.
+      caso tenha que fazer alguma
+      alteração.<br> O preenchimento das informações do PTD é de inteira responsabilidade do professor.
     </p>
     <h4>Nome do Coordenador de Curso: <b>Franciane de Lima Coimbra</b></h4>
     <form method="get" action="">
