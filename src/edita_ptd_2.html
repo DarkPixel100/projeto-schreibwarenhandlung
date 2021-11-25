@@ -76,25 +76,26 @@
       <input type="button" class="tabhead" value="Observações"></input>
     </div>
     <!-- Conteúdo das abas -->
+    <!-- Aulas -->
     <div id="aulas" class="tabcontent">
       <table>
         <thead>
           <tr>
+            <th>Nº</th>
             <th>Disciplina</th>
             <th>Turma</th>
             <th>Grupo</th>
             <th>Curso</th>
-            <th>C.H. (h)</th>
+            <th colspan="2">C.H. (h)</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td colspan="4" class="total">Total</td>
-            <td>0</td>
+            <td colspan="5" class="total">Total</td>
+            <td colspan="2">0</td>
           </tr>
         </tbody>
       </table>
-      <!-- ???? -->
       <h4 class="cadastrar">Cadastrar aulas:</h4>
       <form method="get" action="">
         <table>
@@ -164,18 +165,20 @@
         <input type="submit" value="Cadastrar aula" name="botao" style="margin-bottom: 0;">
       </form>
     </div>
+    <!-- Ensino -->
     <div id="ensino" class="tabcontent">
       <table>
         <thead>
           <tr>
+            <th>Nº</th>
             <th>Atividades Complementares de Ensino</th>
-            <th>C.H. (h)</th>
+            <th colspan="2">C.H. (h)</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td class="total">Total</td>
-            <td>0</td>
+            <td class="total" colspan="2">Total</td>
+            <td colspan="2">0</td>
           </tr>
         </tbody>
       </table>
@@ -200,18 +203,20 @@
         <input type="submit" value="Cadastrar atividade complementar de Ensino" name="botao">
       </form>
     </div>
+    <!-- Pesquisa -->
     <div id="pesquisa" class="tabcontent">
       <table>
         <thead>
           <tr>
+            <th>Nº</th>
             <th>Atividades de Pesquisa</th>
-            <th>C.H. (h)</th>
+            <th colspan="2">C.H. (h)</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td class="total">Total</td>
-            <td>0</td>
+            <td class="total" colspan="2">Total</td>
+            <td colspan="2">0</td>
           </tr>
         </tbody>
       </table>
@@ -234,18 +239,20 @@
         <input type="submit" value="Cadastrar atividade de Pesquisa" name="botao">
       </form>
     </div>
+    <!-- Extensão -->
     <div id="extensao" class="tabcontent">
       <table>
         <thead>
           <tr>
+            <th>Nº</th>
             <th>Atividades de Extensão</th>
-            <th>C.H. (h)</th>
+            <th colspan="2">C.H. (h)</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td class="total">Total</td>
-            <td>0</td>
+            <td class="total" colspan="2">Total</td>
+            <td colspan="2">0</td>
           </tr>
         </tbody>
       </table>
@@ -270,19 +277,21 @@
         <input type="submit" value="Cadastrar atividade de Extensão" name="botao">
       </form>
     </div>
+    <!-- Administração -->
     <div id="admin" class="tabcontent">
       <table>
         <thead>
           <tr>
+            <th>Nº</th>
             <th>Atividades Administrativas</th>
             <th>Portaria</th>
-            <th>C.H. (h)</th>
+            <th colspan="2">C.H. (h)</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td colspan="2" class="total">Total</td>
-            <td>0</td>
+            <td class="total" colspan="3">Total</td>
+            <td colspan="2">0</td>
           </tr>
         </tbody>
       </table>
@@ -313,6 +322,7 @@
         <input type="submit" value="Cadastrar atividade Administrativa" name="botao" style="margin-bottom: 0;">
       </form>
     </div>
+    <!-- Atendimentos -->
     <div id="atendimentos" class="tabcontent">
       <p style="text-align: center; margin: 0;">
         <b>Especificações Referentes às Aulas e Atendimentos aos Alunos</b>
@@ -324,7 +334,7 @@
             <th>Atividade</th>
             <th>Hora de início</th>
             <th>Hora de término</th>
-            <th>Local (prédio, sala, laboratório, link)</th>
+            <th colspan="2">Local (prédio, sala, laboratório, link)</th>
           </tr>
         </thead>
         <tbody>
@@ -391,6 +401,7 @@
         <input type="submit" value="Cadastrar atividade referente às Aulas e Atendimentos" name="botao">
       </form>
     </div>
+    <!-- Observações -->
     <div id="obs" class="tabcontent">
       <form method="get" action="">
         <h4>Observações do professor:</h4>

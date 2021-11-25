@@ -107,6 +107,18 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+thead, tbody {
+  width: 100%;
+}
+
+td>a {
+  color: var(--secundaria);
+}
+
+td>a:hover, td>a:focus {
+  color: var(--terciaria);
+}
+
 /* Organização interna, posicionamento e cores dos inputs */
 
 input, select, textarea {
@@ -175,6 +187,10 @@ label {
 
 label>p {
   display: inline;
+}
+
+p, td {
+  white-space: normal;
 }
 
 p {
