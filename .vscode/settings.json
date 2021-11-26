@@ -20,5 +20,5 @@
     "**/CVS": true,
     "**/.DS_Store": true
   },
-  "editor.renderWhitespace": "boundary"
+  "editor.renderWhitespace": "all"
 }

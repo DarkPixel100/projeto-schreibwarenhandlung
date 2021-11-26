@@ -10,7 +10,7 @@ troca.addEventListener('click', () => {
     } else {
         document.getElementById("title").innerHTML = "Recuperacao de senha";
         document.getElementById("username").placeholder = "Nome de Usuário";
-        document.getElementById("trocar").innerHTML = "Nao sei meu usuario";
+        document.getElementById("trocar").innerHTML = "Não sei meu Usuario";
         formato = "senha";
     }
 });

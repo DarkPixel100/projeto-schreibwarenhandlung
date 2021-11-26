@@ -1,11 +1,18 @@
-.container {
-  position: relative;
-  top: 10em;
+#wrapper{
+max-width: 112 rem;
+width: 100%;
 }
+
+.container {
+  width: 100%;
+  text-align: left;
+}
+
 h4 {
   text-align: left;
   font-weight: bold;
 }
+
 th, td, form {
   text-align: center;
 }

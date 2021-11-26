@@ -29,10 +29,14 @@ import { listaDisciplinas } from './lista.js';
 function selecionarModalidade() {
   modalidade = modalidadeSelect.value;
   let cursosHTML = '';
-  if (modalidade === 'Integrado') cursosHTML = cursosIntegrado;
+  if (modalidade === 'Integrado') {
+    cursosHTML = cursosIntegrado;
+  }
   else if (modalidade === 'Subsequente') cursosHTML = cursosSubsequente;
   else cursosHTML = cursosSuperior;
   cursoSelect.innerHTML = cursosHTML;
+  curso = cursoSelect.value;
+  turmaSelect.innerHTML = modalidade === 'Integrado' ? turmas[curso] : '<option value=""> </option>';
 }
 
 function selecionarCurso() {
@@ -40,12 +44,12 @@ function selecionarCurso() {
   let auxList = [];
   for (let disciplina of disciplinas) {
     if (disciplina.substr(0, disciplina.indexOf('-')).includes(curso)) {
-      if (disciplina.includes(modalidade) || modalidade === 'Superior')
+      if (disciplina.includes(modalidade) || ['Subsequente', 'Superior'].includes(modalidade))
         auxList.push(disciplina.substr(0, disciplina.indexOf('>') + 1) + disciplina.substr(disciplina.indexOf('->') + 3));
     }
   }
   disciplinaSelect.innerHTML = auxList.join('');
-  turmaSelect.innerHTML = turmas[curso] ? turmas[curso] : '<option value=""> </option>';
+  turmaSelect.innerHTML = modalidade === 'Integrado' ? turmas[curso] : '<option value=""> </option>';
 }
 
 // Definindo elementos (select's)
@@ -128,8 +132,8 @@ const turmas = {
 
 let disciplinas = listaDisciplinas.split('\n');
 disciplinas.shift();
-let modalidade = 'Integrado'
-let curso = 'Automação Industrial';
+let modalidade = modalidadeSelect.value;
+let curso = cursoSelect.value;
 // let turma = '1E';
 
 modalidadeSelect.addEventListener('click', selecionarModalidade);
