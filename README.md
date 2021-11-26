@@ -2,7 +2,9 @@
 
 ## Rodando
 
-Você pode ter acesso total da página por [aqui](https://dbo-2021.github.io/projeto-schreibwarenhandlung/src/).
+Você pode ter acesso à página por [aqui](https://dbo-2021.github.io/projeto-schreibwarenhandlung/src/).
+
+Página com todos os [links](https://dbo-2021.github.io/projeto-schreibwarenhandlung/apresentacao.html).
 
 ## To do List (arquivos) - 100% Concluído
 

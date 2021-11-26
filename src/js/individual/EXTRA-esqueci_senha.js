@@ -8,7 +8,7 @@ troca.addEventListener('click', () => {
         document.getElementById("username").placeholder = "Seu Email";
         formato = "usuario";
     } else {
-        document.getElementById("title").innerHTML = "Recuperacao de senha";
+        document.getElementById("title").innerHTML = "Recuperacao de Senha";
         document.getElementById("username").placeholder = "Nome de Usuário";
         document.getElementById("trocar").innerHTML = "Não sei meu Usuario";
         formato = "senha";
