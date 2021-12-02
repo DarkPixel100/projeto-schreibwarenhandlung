@@ -80,7 +80,7 @@ e animação (fade-in) do container principal */
 #wrapper {
   animation: fade ease 1s 1 forwards;
   position: absolute;
-  top: 8vh;
+  top: 8rem;
   background-color: var(--primaria);
   display: flex;
   flex-direction: column;
